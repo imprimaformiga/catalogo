@@ -1,0 +1,419 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="Catálogo de brindes personalizados da Imprima. Peça seu orçamento pelo WhatsApp (37) 92000-6433.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Catálogo de Brindes Imprima">
+<meta property="og:description" content="Brindes personalizados com a sua marca. Peça seu orçamento pelo WhatsApp (37) 92000-6433.">
+<meta property="og:url" content="https://catalogo.graficaimprimaformiga.com.br/">
+<meta property="og:image" content="https://catalogo.graficaimprimaformiga.com.br/og-capa.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="favicon.png">
+<style>*,*::before,*::after{box-sizing:border-box}body{margin:0}:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}img{max-width:100%}</style>
+<title>Catálogo de Brindes Imprima</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap">
+<style>
+/* Layout: full-height reading room — slim brand bar on top, the book centred on a soft "table", controls docked at the bottom */
+:root {
+  --table: #e7eaee;
+  --table-2: #d9dee4;
+  --bar: #ffffff;
+  --ink: #1d2733;
+  --ink-soft: #5d6976;
+  --line: #d3d9e0;
+  --blue: #0b5e96;
+  --orange: #f5a20a;
+  --chip: #f1f4f7;
+  --wa: #1a9e55;
+  --shadow: 0 18px 40px rgba(20, 35, 55, .22);
+  --ui: "Poppins", "Segoe UI", system-ui, -apple-system, sans-serif;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --table: #151c24; --table-2: #0f151b; --bar: #1c252f; --ink: #e8edf2; --ink-soft: #9aa7b4;
+    --line: #2c3845; --blue: #4ea3dc; --orange: #f7b23b; --chip: #26313d;
+    --shadow: 0 18px 44px rgba(0, 0, 0, .55); color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --table: #151c24; --table-2: #0f151b; --bar: #1c252f; --ink: #e8edf2; --ink-soft: #9aa7b4;
+  --line: #2c3845; --blue: #4ea3dc; --orange: #f7b23b; --chip: #26313d;
+  --shadow: 0 18px 44px rgba(0, 0, 0, .55); color-scheme: dark;
+}
+[hidden] { display: none !important; }
+html, body { height: 100%; }
+body {
+  background: radial-gradient(120% 90% at 50% 40%, var(--table), var(--table-2));
+  color: var(--ink); font-family: var(--ui); font-size: 14px;
+  display: flex; flex-direction: column; overflow: hidden;
+}
+button { font: inherit; color: inherit; cursor: pointer; }
+button:focus-visible, input:focus-visible { outline: 2px solid var(--orange); outline-offset: 2px; }
+
+/* top bar */
+.top {
+  background: var(--bar); border-bottom: 1px solid var(--line);
+  padding-block: 10px;
+  padding-left: max(16px, env(safe-area-inset-left, 0px));
+  padding-right: max(16px, env(safe-area-inset-right, 0px));
+  display: flex; align-items: center; gap: 14px; flex-wrap: wrap; position: relative; z-index: 5;
+}
+.brand { display: flex; align-items: center; gap: 12px; min-width: 0; }
+.brand .logo { height: 30px; width: auto; background: #fff; border-radius: 6px; padding: 4px 8px; box-sizing: content-box; }
+.brand h1 { margin: 0; font-size: 15px; font-weight: 500; line-height: 1.2; white-space: nowrap; }
+.brand h1 small { display: block; font-size: 11px; color: var(--ink-soft); font-weight: 400; letter-spacing: .04em; }
+.tools { margin-left: auto; display: flex; gap: 6px; }
+.btn {
+  display: inline-flex; align-items: center; gap: 6px; height: 36px; padding: 0 12px;
+  border: 1px solid var(--line); background: var(--chip); border-radius: 8px; font-size: 13px; font-weight: 500;
+}
+.btn:hover { border-color: var(--blue); color: var(--blue); }
+a.btn { text-decoration: none; color: inherit; }
+.btn.wa { background: var(--wa); border-color: var(--wa); color: #fff; }
+.btn.wa:hover { filter: brightness(1.08); color: #fff; }
+.btn svg { width: 18px; height: 18px; flex: none; }
+.btn.icon { width: 36px; padding: 0; justify-content: center; }
+
+/* stage */
+.stage { flex: 1; min-height: 0; display: flex; align-items: center; justify-content: center; padding: 18px 16px; position: relative; }
+.book-wrap { width: 100%; margin: 0 auto; }
+#book { margin: 0 auto; }
+.page { background: #fff; overflow: hidden; }
+.pimg { width: 100%; height: 100%; background-repeat: no-repeat; }
+.zimg { flex: none; background-repeat: no-repeat; background-color: #fff; box-shadow: var(--shadow); }
+.page.loading::after {
+  content: ""; position: absolute; inset: 0; margin: auto; width: 26px; height: 26px; border-radius: 50%;
+  border: 3px solid #dde3ea; border-top-color: #0b5e96; animation: spin .9s linear infinite;
+}
+@keyframes spin { to { transform: rotate(360deg); } }
+.stf__parent { box-shadow: none; }
+.stf__block { filter: drop-shadow(var(--shadow)); }
+.side {
+  position: absolute; top: 50%; transform: translateY(-50%); width: 44px; height: 64px; border-radius: 10px;
+  border: 1px solid var(--line); background: var(--bar); display: grid; place-items: center; z-index: 3; opacity: .92;
+}
+.side:hover { color: var(--blue); border-color: var(--blue); }
+.side svg { width: 22px; height: 22px; }
+.side.prev { left: max(10px, env(safe-area-inset-left, 0px)); }
+.side.next { right: max(10px, env(safe-area-inset-right, 0px)); }
+
+/* bottom bar */
+.bottom {
+  background: var(--bar); border-top: 1px solid var(--line);
+  padding-block: 10px;
+  padding-left: max(16px, env(safe-area-inset-left, 0px));
+  padding-right: max(16px, env(safe-area-inset-right, 0px));
+  display: flex; align-items: center; gap: 14px;
+}
+.bottom input[type=range] { flex: 1; min-width: 0; accent-color: var(--blue); }
+.count { font-variant-numeric: tabular-nums; font-size: 13px; white-space: nowrap; }
+.count input {
+  width: 3.6em; height: 30px; text-align: center; border: 1px solid var(--line); border-radius: 6px;
+  background: var(--chip); color: var(--ink); font: inherit; font-variant-numeric: tabular-nums;
+}
+.cat-now { font-size: 12px; color: var(--ink-soft); white-space: nowrap; min-width: 0; overflow: hidden; text-overflow: ellipsis; max-width: 30%; }
+.cat-now b { color: var(--orange); font-weight: 600; }
+
+/* drawer */
+.scrim { position: fixed; inset: 0; background: rgba(10, 18, 28, .42); z-index: 20; }
+.drawer {
+  position: fixed; top: 0; bottom: 0; left: 0; width: min(380px, 92vw); background: var(--bar); z-index: 21;
+  display: flex; flex-direction: column; box-shadow: var(--shadow);
+  padding-top: env(safe-area-inset-top, 0px); padding-bottom: env(safe-area-inset-bottom, 0px);
+  padding-left: env(safe-area-inset-left, 0px);
+}
+.drawer header { display: flex; align-items: center; gap: 10px; padding: 14px 16px; border-bottom: 1px solid var(--line); }
+.drawer header h2 { margin: 0; font-size: 15px; font-weight: 600; flex: 1; }
+.tabs { display: flex; gap: 4px; padding: 10px 16px 0; }
+.tab { flex: 1; height: 34px; border: 1px solid var(--line); background: var(--chip); border-radius: 8px; font-size: 13px; font-weight: 500; }
+.tab[aria-selected="true"] { background: var(--blue); border-color: var(--blue); color: #fff; }
+.search { padding: 12px 16px 6px; }
+.search input {
+  width: 100%; box-sizing: border-box; height: 40px; padding: 0 12px; border-radius: 8px;
+  border: 1px solid var(--line); background: var(--chip); color: var(--ink); font: inherit;
+}
+.hint { font-size: 12px; color: var(--ink-soft); padding: 0 16px 6px; }
+.list { overflow-y: auto; flex: 1; padding: 4px 8px 16px; }
+.row {
+  width: 100%; display: grid; grid-template-columns: 1fr auto; gap: 2px 10px; align-items: baseline; text-align: left;
+  border: 0; background: none; border-radius: 8px; padding: 9px 10px;
+}
+.row:hover, .row:focus-visible { background: var(--chip); }
+.row .nm { font-size: 13.5px; min-width: 0; }
+.row .pg { font-size: 12px; color: var(--ink-soft); font-variant-numeric: tabular-nums; }
+.row .cd { grid-column: 1; font-size: 11.5px; color: var(--blue); font-weight: 500; letter-spacing: .03em; }
+.row.cat .nm { font-weight: 500; }
+.row.cat .num { color: var(--orange); font-weight: 600; font-variant-numeric: tabular-nums; margin-right: 8px; }
+
+/* zoom */
+.zoom { position: fixed; inset: 0; z-index: 30; background: var(--table-2); display: flex; flex-direction: column; }
+.zoom header {
+  display: flex; align-items: center; gap: 8px; background: var(--bar); border-bottom: 1px solid var(--line);
+  padding-block: 10px; padding-top: max(10px, env(safe-area-inset-top, 0px));
+  padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px));
+}
+.zoom header span { flex: 1; font-size: 13px; color: var(--ink-soft); }
+.zoom .pane { flex: 1; overflow: auto; -webkit-overflow-scrolling: touch; }
+.zoom .pane-in { display: flex; justify-content: center; gap: 6px; padding: 16px; width: max-content; min-width: 100%; box-sizing: border-box; }
+.zoom img { display: block; background: #fff; box-shadow: var(--shadow); }
+
+@media (max-width: 640px) {
+  .brand h1 { font-size: 13px; }
+  .btn .lbl { display: none; }
+  .btn { width: 36px; padding: 0; justify-content: center; }
+  .side { display: none; }
+  .cat-now { display: none; }
+  .stage { padding: 10px 8px; }
+}
+@media (prefers-reduced-motion: reduce) { .page.loading::after { animation: none; } }
+</style>
+</head>
+<body>
+
+
+<header class="top">
+  <div class="brand">
+    <img class="logo" alt="Imprima" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHsAAAAwCAYAAAAxWAXQAAAgL0lEQVR4nO18e5BdRbnvr3utXo/9mpm9k+yETMhMyAQJIRASnhI5KKAFNyAcrLrg9aQ8hxIfoCAehD9EFK14Lnil9KqXh0HQUqQQgwqieAmehJsEAyGBTCCTMENmJpnX3rNnv9aje3XfP/bulT1jFK5QRaybr2pq9l6711rd39ff69dfN1FKISYFM/5MFADpNr8IgPDG/78k1WxH/kabY/Te02HhKphQYFAwQSAawg47FRQDjDJglAnMYrOx2biFAFBQENnm44rkmLCPWjL/+k/UUyBCQTESX9NCVqxhDwgUiAkQQY78kGN0FBE5bMaVCaVY01xDErDG9cgkALQwFRSTUEyCAjAaDwE4BTwCcAIc0+yjlGZotnQBYipieACgAJPAEAA4IJnWbED754agCSCOCfropxZhK9b4A4iCBwKuAFPFbSgnUJwAngEAigCqqf0EvPn/GB3FRA9/JBygdSjqAUBTW2doKhENITcFraN3BTZT84/R0Ufkr6Ze+hIBJNBMrSAIFCfatyvCQMBBZNO/H0u9jmaaJlzVNMOkRf5EAZTAUwADFADFQJQJBYA0/LZufsyKH91ElVKmUsqUSrkKYFyEeZDIBYncoF47FVAgSoFCAirMK8XzUuqoHQCBUKBQjTTsPR7OOyfOeT6KonS9Xl+uv0upwaV/bIp9dkNUkclMs1iq1VcH0sjRZHKIE5IThGTKteAsqXTbpgkHAAWzEYmTf/hovFqtnmWaZsEwjEoikdhVqVTOY4yNUkq9Uql0yXvdv3dKrcI2uVdbCRBuJdNDIz6+8Jst4yOPPjs08voonqRJ1xPEZkpSj0jCIOFCwoUCIwogrb7/H5Rc1+2Noijz0ksvHdqwYYM6cODAXfq3VCq19b3s27tBREppAgCBYtyrraSJ9M6XB3n/Xff+MvfnV0dBqYnOWRau/+RluPic/GpHRn1MkXpDswlA4TWepDjI0R2cKfW3swVCiFi3bp3605/+hKGhIeTzeXzoQx/CDTfcsDqdTm9+O/e/uz1+d+lw6qUIpDS5AHIPPfps7qnnB8AzyzGBbuwY4PjeQ7+BBywVlGYjRAkQwUAb+Xjj/9E90LdDO3bsGHzooYcwOjqKTCaDiYkJPPzww9ixY8cmz/NOeq/7906pNc+GZTsDIUdnICRMJwGWyMDNZGElUpiq1qAAUyqVANEYuWzE59PAl39cGhkZ6aSUglIK13Uxb948GIaBQqEAy7KG3uv+vVM6LGyiODFRiAQy/7T6FOTbOIb7NqE+8QpQG8BHP3wWGDBqKFEmiggowqGoqQCmELkKIqOOclBFKcX+1t8HPvCBVatXr4YQAvv378fLL7+MVatW4fTTT7/HMIzKW93/Xo/vrajFZ0s3qJUvMFMdGwcDrNszjM89t60foyNjuOSDq/D+U43bM8BGJ/IKVFpFCgOgqBMqhSI830i62CjQQOCORnqrFEpK6ZZKpUt+97vf/eTgwYNIJBK45pprrs7lco+8nfspPXrHDkwTtsgF5fFP2m357x8Mjc8pCyxU6LQIhgjAEQFZQ/zSgQCU068UGCHgiPxuRH4PLLsfsIaUJCCUelCKcc7zhmGUCSFcKcWoYZTrtdrKRDL5ooyiDCGEE0q9wPd7bMfpA4DW6wAQBkG3Zdv9Mooy1DDKkRC5MAw7Xdft1aBOJETOMM0CAAjO8yZjowDge95S0zQLpmkWQQiP2zX7xrRpVoqBEo9zng/DsNNxnL2GYVQAwPO8k1zX3XMk5tVqtZWmaRZs2x6ILx4BhdR9jKIoo/kBAIQQTggRTayD1ev15al0enO1UjkvlU5vbr0/DIJuQghnjI3q9gBADaOMpgABQAiRNU2zGEVRmlLqEUJEvV5fnkgkdrUIO8pA1Jcrltn8q//zJn99qAwlKahB4LomUkYVV/zT+64aP7D/K1u37Tl1y5ZtMEkAogJ0pFM45ZTl+NCHL/lcpj37hMnYqOA87/t+T39//73PPvvskt7eXkRRhFQqBUIIVqxYgcsuu+yq9o6OJ3zPWxoEQVc6nd78xz/+sdDf3485c+YgCALUajUsX74cp512WndfX99jL7zwwsq+vj6Mj4+jVqvhxBNPxEUXXYTFixd/LpvN/jIIgi7Oeb6tvf0pJaW7YcOGcqFQQDKZhFIKQRDggx/84H0Lu7o+V5iY+MTevXvXDwwMIJfLYdnyU277/e9/v86yLEgpIaWE53m49NJL142Pj3/y+eefn5tKpWDbNmq1Gi644IKfL168+Jq9e/du2L59++UvbN0GSimCIIjHeMUVV3wim8s9oic5ALyya9fup59+esnIyAg8z0MYhshkMjjvvPOwdOnSTe876aQPagEzxkaklAnDMMpSSpcaRnmyWLxqx44dP9+3bx/6+/sxNjaGKIpADIqenh50d3fjsssuW6UnB2Ns1PO8k2JhA0BxovAJbs/K/Pt3Ntzz2027YTkZCMFBUEfPPAv33HYN7rr9S9j96n6EfgiKABYzQKkBKSXmzZuLb31rHV+5cmXuwIEDdz/wwAOfevzxx5FMJhEEAer1OrLZLEqlEmzbxuLFi3HNNdfgqo99jOmZ++Uvf7n/F7/4Bdra2qCUAucc55xzDs466yz88Ic/hGk2uksIgWEYiKIIrusin8/j1ltvxdnnnMMAQEnpSikTH//4x0d27twJwzAgRCNh+PSnP41kMomNGzeit7cXtVoNl19+OVaf/wHcfPPNSKfT8H0f1WoVUkp8/etfx969e/H4449DSgnLsmDbNi688EIsXLgQzzzzDAYGBlCcaEwqy7LAOQchBCeeeCLWrl2LK668kg0NDq677777vvT000+jWq2Ccw7DMJBIJCCEgBACPT09WLt2LS666KKL05nMxsD3eyilHrOsoWKh8F+fe+65n/zmN7/B1q1bUSwW0dbWhlQqBc45qGmAcw4hBM477zxce+21WLlyZbdt2wNBEHTFglYgrGP2rEeqwFks3YnILsLKLkAUePBro0DCghcxvL6vH1JG6Fq4AFNT4yCEwLJSiKIIBw4M4Y477mAXXnhh+YUXXsC2bduQzWZRr9eRTqfR0dGBYrEIy7KQTCaxc+dOjI6OwjAMfsWVVzIAyGQymDVrFtrb2wEA5XIZb7zxBvbt24d0On3Y/5BGlOD7Pmq1Gg4ePIgbb7wRN910E7/yyiu7p6amLs5kMhtt247fZ1kWDh48iGeeeQZjY2PwfR+u6yIMQ7iui+7u7l4AS9PpNCzLQiqVQqlUwvz58zE6OgrXdaGj9UQigVdffRVbtmzB1NQUkskkFi1ahCAIwDlHe3s7hBB4+eWXUSqVMDQ0xLdv344///nPkFJizpw58H0fpmnCcRyMjY0hkUjgzTffxLe+9S0UCoU/rF27dol2bzteemnkxz/+ce7JJ59EEATo6enBvHnzUKvV4vEJGaFUKkEphc2bN2PXrl346le/2r9mzRpi2/ZAS+oFhBydEkj4woKg7ZBsNpSdB5w54CSNCBayuVlIuDZ4UIPrMFgWQ7lSRSSB9o4OjI6O4kc/+hH279+PtrY2UEqxaNEiRFEE3/eRTqeRTCZhGAaWLFmCYrGI733ve3hh2zYOAJQ2uuR5Hur1OqIogpQSQRDAtm1IKSGEgFIqZro20YcOHcLDDz+MLVu29M+aPXt9GIbzlVKQUsK2bVQqlQZTmve3tbWBsUYQLYSA7/s9QghEUQQhBDKZTDyhoihCtVpFNptFW1sbPM/D+Pg4giBAIpGAUgqEkHhCVKtV2LaNE044AfV6Hffffz/6+vpAKUUmkwFjDK7rgjGGKIpgWRYMwwBjDJxz3HfffdizZ8+zkRA5APjtb3+be/LJJ2FZFt73vvdBSonR0VFUq1UUCgUcOHAA5XIZlmVhzpw5aG9vR71ex913343e3t7/FEJkpwnbNFGQgBtJAhFR1H2JUBgAdSFhwrQclKamUK2W4fs1jI4eRLk8CdthkDJCIpGIZxqlNDZnr732GpRSKJVK8DwPSimMjY2hVCqhvb0dk5OT2LBhAyIhcr7vIwgCMMZipkRRBMMwMDU1Bc45wjBErVZDrVaD7/tQSiGZTKK9vR3Dw8O45557UKtWz06l05vr9ToopRBCxILwPA+WZYEQgnK5jDAMMTk5CSEEcxwHSikIIf7CVejrQRDA930YRqMsq1QqIQxDHDp0CENDQ3H7Wq2GcrkMSilM00StVkMymYSUEiMjIxgeHsbg4CBKpRJmz54dm3TGGIrFIu6///5OHXhed911N5577rlgjGFsbAz1eh0LFizAmjVrcOWVV+L000+PXcPU1BSEEEgmkxgbG8P69etXU0q96ZGjAggBpyoAiQIo7kNJCSl8KM4xcnAYixefgGUnLsG82Vls2fIn7NnzGiIZwHVTGB05hLlz86jX6wCAWq2GRCKBj33sY5g3bx4GBwexceNG1Ot1dHd3IwgClEolWJaFF198EYZpFrQ2lUqlWLP05AGARYsWYeHChYiiCG+++SbefPNNVCoV1Go1pFIpmKaJ7du349e//vWmq6+5hkkpQQiBFroWcr1eh+u6OOGEE9Dd3Y1LLrkkDqy0lpbL5cOsUQqu68YWKplMghCCMAyxbNkyrFixAvPyc7F9+3a88sor4JzDcRzoyWtZVjyxM5kMPvzhD2PJkiXYt28fnn/+eQwODiKTyaBYLMJ1XcyePRtvvPEGhgYH13V0dDwxJ5///vXXX3/PLbfcgkwmg89//vNYtWrVVe3t7U9JKd0gCLp//8wftn/lK19BEARwHAeWZUEIgT179mBiYuIT04QdhmEndSyPMQLHpkgnHXh+AI8rUEKwaNEJ9f/4j//+RNf8/PUGUP6XtVdf/MAD9z/5v+57CFEUId2WxtTUFNLpNIrFIhYuXIibbroJH7rwwhhw+MUjj/DvfOc7GBwcRCqVik3Xvn378PKOHYNBECCXy8H3fRBCYJomgiBAuVzG+eefjxtvvPHFpSeffDaUYgMDA/9z/fr1//rEE0+go6MDhBCMj49j7ty5eOqpp3DVVVd1plIpCCFgWRYYYxBCYHJyEu3t7fjCF76Af77qKgY0UqP/vfHZEaUUGGMwDAPVahWmacbWpVKpYO7cubGvrdVqOP7443HbbbfVzzjjjCQUzLVr13Y+8MAD/Q888AAmJyfR0dGBMAxBCEGhUMDs2bNx44034r+sWcMC3+8hhIht27btvfXWWxGGIRKJBGzbxtTUFMbGxrBnz54vXXTxxbfxMOw886yz2A9+8IOtxx9//JdS6fRmwXkehHBqGNyyrKGPfvSjZPfu3epnP/sZDMOAYRhQSmFgYAC7d+++12wF76lJPQUwIUNEMoQfVBFFgG0xhKEHxyZ9nbPyXw04uiE5LMft/cz11y8dLVZ6f/HzRzHHzUKKhr/yfR9f/OIXsXr16m7Bed40zaIQInvFFVcsIYTsvf3222EYBkzTjH3k+Pj43Ewmg0qlEkeopmmiXq/jlFNOwde+9rXb58yZcx+UYkEQdHV1d193yy23/GTHjh0bh4aGkEwmkUwmEUURhoeHMTw8/BXLshCGIdrb22EYRqy9d911F04//fRuAKhWKuclm2mRYRyOaF3XxeTkJKIoglIKURSBcw7LsuD7PgDgjjvuKJ944omXep53kms7A81oP1Mul8vr169HpVIBYwyWZaFcLuOzn/0sVq9efXnTWjBCiDjnnHM6r7322qE777wTc+bMQRRFsG0bvu9jeHgYAKAxge7u7uv27t274dVXX+0cGxvDyMhIbDmoaWBychKWZaFer8O27Zh/vu/PAACIauDcBJCkWZdCAKIIoCgMA2UCcIOgTKjJlQoYoUSYzIiBV0JI7OsMw/gLVIlSWjdNMzbL+h49C7WZtG07ZrzjOI3o87jj1oVB0K2UMm3H6as215vPPPNM7N+/H67rQggRa3CtVlvpeV7sb7WGtbe3I5vNPmk2ARbDMCrkbaBfjuOAEALtGhzHQSqV2mrbdr8GOTQgpMdoGEacOSQSCcyePRtOM8J2XLcXSjEQwvP5PNLpdOxidLpaLpehmmZ69+7dWx588MHE5s2b4XlerCiO4yAIArjJBDzPQyaTASEExWIxtp6HDh3CtABN1yUpQiFBEREDEo0/gMKkKBIFzghGbJMMUalME7RuMxtEHfZ12vSZpokWBM1sak7Zsqw4X9aMM00TSqlY4FrrdaCkU7GogbAJAGCMjdqO07dgwYJYCLqmzvd9cM7z2n9pQAUAZs2ahXw+/wNCqaeUMhljI28l6CMJ23VdtLW1/cGyrGGjiWTpvuno2jTNOA5wHAezZs2CbdsDMooyzZnOASCfz9cTiUQM5pimiTAMYRgGpJSJTZs27bz55psTTz31FJLJJBYvXoxUKhXn/a0BrJ5gURTBNM3YFU7T7Lj2WxEAFAoUkjQ0TwEwDRQgAYNAQIERGWUIqGczC7Q5ewkhcfTJGAMakODhenNKPT0RAMTC0R3UPpwxFqdXnHP09fVBRlHGTSR2Qinm1eunWpY15NXrp7766qtxe23+CCFIJpMvGoZxqRaOnlyu68bFCEoppuHVtyJKKaSU8fdmjtzX/FyEVDF2btt2PB49CTXzQQjnnHfZTfiXUlq3bXtASrk0ihpZjUbvcrkcKpXKeQ8++CCq1SpmzZoFKSXeeOMNdHV14f3vfz9OOukkKKVQrTfwhi1btsDzPLS3tyMMwzgWaCn6h6BKcgrUyYwSQgUARIEQCKXAGlu8pGko6QKKWZTCAAGagtPAg2Zw/I7mrG/9TQu7ta026Vora7UaXnrpJezfv//hRYsW/ZthmgU3kdgJAL0vv/zGK6+8gjAM4TgOHMdBuVzGcccdhzlz5tznuu6lnufFkTrnXDOf4f9xpSqKogYs2dTu+DlHID2Z9Vj0/Zxzfb0cCZHjnOdt2+6Poiij83+dsmoFeP311x97/vnn0dHRgXQ6jUqlggULFuDOO+/kq844I3GYwRAPP/yw2rRpE5RSME0zhmMJIdPNeEOf4VHVKB8EFBRRUERCEomIIK0ImuXDqnGDUiakAgUBwWEBTitRPixs3irgVtIao0GTMAwbpsc0Yds2isUiPvOZz1z62GOPjZQmJy+XUZT59RNP8G9+85uJwcFB5PP52FxaloVVq1ahra3tGQ2TtroKzrkuLMzo96u3UVQ4U9jNwO2wsJvjAxoTOoqi+Cc9Zj1Os1HbVqeUeoRST0rpaquoJ2QikUCpVMK+ffuglEJHR4d2jZg/fz5OPvnkcwCgMDHxieaz3RdffBHVahWWZcWYh+M4DasyTRgqrg0HgQSIbApcQhKFUKIzMpCJANcggKJEEIJpg9ID08w4krC1VjSvxe1bmapdQavPLhQKePDBB7F+/frHbNvG6OgoyuUyUqlUHGVrlOsjH/kIAMRpktYw/b5mJMxb+vyWWt6qpS39561tdGyiAZiZpDUeSjFCqWcYRhlKMUqppy2i9tXa77qui2QyCc45JicnYxBoaGjoayeccMK/ZLPZx2QUZf7HPd8pbN26NfbjOhNwHKfBz9aOSEKEBFzSLB/WFeFUNf4iiYwCTK7UXEowIglggHqRAggxAMSMnBYsNZkSj7xV2JoxOr3R5txxHBiGgTAMoZRCNpvF5OQkqtUqPM+LgY0FCxagWq0iDMMYEu3q6sIZZ5xxdhAEXToF0RrT4mI4bWqUktIllLxlNK4RMz3Gpk8uK6VMKaWrl0W1e9BjOtIz9BIrIYRHUZShlNaVUnEGIqWM4eXu7u6CaCyRIpPJwLIs9PX14dvf/valPT09BcdxsO2FbXh5584YhjUMI07BtNK1LITA5ITkBZBVkPC9GpxZDGHIQXkEBwxUwiOAkFK6kRFlJKFeFEUZZicQhAIpQmA5NsIwRKQkDGZyEAgJBYNSLwiCLtu2B2zXgcHMxipNIGCxRo4ooZCbPQuKAHXfa5hLKFCDolSeQiKVhFQKlmPDcuwGBFueagRypoHxwgROXnYy7vr23fclUsltSimTGBSh4LBlpPvUSCcNWm6sYYu8Xo9mjMHzPLS1tcWB3MjICKSUMAwjZr7OwZvpZVkLWkrpghIPlHiWY8N2HVDTgB8GDWtlGoiUhIhEhtnWgFLKVATcMM1ipCQLeINvzGKwbRte4GOqUsbxXQuvX3XmGT/v7e1FW1sbQAiS6RS2bNuKZ5/bGJv8trY2BEEQK1tjkcrSuP90n62UZJFCxqEcGTuCrapwSR0ZI4SrAoADFKhDSUgZZUxqFkzDGrIsC6o5a/VCAmMMUja2BUkpE77v95hNnFfn2HoZUM/2IAgwOTkZm3CNaXueh+OOOw5TU1PwfT+2GjPvXbFiBW677Tbe3d19Xa1WW0kIEbZtx6BNFEUxM3T+H0VRJgzD+QCmpYx6zdqyLFiWBQDx6pLjOGhZMMlpQeu/pqaDEALOORhj6OjoiIMu02wcaiCaixy6H4wxJBKJGLSp1WoQQiCXyz1yww03wHEcjI+Po1KpIJPJIJPJIJlMIpfLIZvNYmJiAvl8HpZlYXJyMk77NFYxbZMAI6rAKyKfkFNoQwHGVB/o1Ouw/QNAdRAJA7tMoOiaZq9FjTKBdGvVqYt9rwLXMTA1NYlKpQLDMOLBRVGUZoyNOo7TZxhGRQiR9X0fjuPE6YU2w7lcDp7nxQGQ1rZ0Oo01a9bgzDPPRDqdxsTEBMbGxjA+Po6pqSnkcjmcf/75uPvuu9edeeaZFgAkk8kXfd/vqdfrCIIg1kz9zHK5fEFz4nk6Ry4Wi0gmk/FCS7lcjgsOwzBEtVpFqVRCpVKJJ3S5XL5AV4VoIdZqtZVSyniFrVKpYGpqColEAuVyGbpSlTE2GlsEANVqNUYfOecxSAQAZ599duK73/0u1qxZA6UU9u/fj4MHD8LzPHDO4Xkerr76atx6661YtmwZisVizONY8NM344tcRFh9Z7+/d6RC5jptNoIAsARg8gpOX5penTCwkwe1JYzRuiIyYRpmYeTQ2KcOHhz5ArPsASEapTelUmnpypUrV2kYUgiRbQYhXrFY/Oddu3Y9ls1me4Mg6GKMjXLO852dnbevX7/+7p/+9KdIpVLT1o7vvffen8+bN+/b/f399+7Zs2flyMgIKKVYsGABli1btn7RokX/Fobh/FamSynd119//UldvWJZ1pCUMgEAK1asWNBq1YQQWc/zlr700kubEolEnTE26rpub7lcvmDp0qUfmJiY+G9TU1MXk0aOnDcMo1yr1Zace+65pPW9YRjOtyxreGxs7FOvvfbavblcbquU0mWMjRaLxYtPO+20Uxljo82SJB5FUcayrOFSqXTJ0NDQ11v7U6/Xuzs7O+8+/vjj/127QCFE9rXXXvvDK6+8snJkpIEFLVy4EEuXLv3Dcccdty6TyTw3Ojr62fHx8X+t1+vLTdMsKKXYvHnz7m4RtnQR8TyoPVTycbFkcKnZOE3BBIqGRJkIxS1DFqAUIybhURR2aq1oFBoaZb2LUw96JkO1IDjnedYEM5RSpmbgN77xjfKjjz4aQ4c69/zVr361Lp/Pf7+JyIlmqsLjoKjlOfq9UkpXB2GtsK2uK/N9v0eDIpqCIOhSjei4blnW8Mx7Wyet/k0z1bKsYS0UAGh9vg7imu1PTSQSO1vHMS3AOwL5vt8TRVFGK4/v+z2MsZHWe4Ig6NKucuazpJRuywE6hDcEFrkJAzupaXgScEWEnAkUSKTAGEYBwgDDayyHNoUFxSIZZSgIV6rxIsbYqDZPmlla0DMHTwgRTXNa0ZEopXQafCqldC3LGo6iKK2UMvWzoihK6/sBwLKsYSFEVinF9GTyPG+p67q9tAmPamHMFDTQMK26oG9mNWnTHzMhhKsXdizLGk4kErt0m9biQ/18IUTWMIyyFoDrur0tAFNjP/yMTRbNcbJmpO45jtOnYwL9PQiCLiFEzrKsoaaFGOLNRadWPhNCBCGEt65GCFCzAKkYkWHGVAIWuDBljVmG8JglyzLiebRkEoSaZQWjrGCUpWosANDDAIGumjS1YFsHY1nWsM5JpZSu7/s9zc9x8KUBjGbkW1ZKmZph9Xp9eb1eX94qaM0wIUSOtUCgiURiJ+c8r5Qym9Uo2eaEMPWuzda+GYZRoZR6nuctbe13M4ga1ZZDm239u/4cRVFavy8Igi7dN70jdObikBYi5zzf2gfTNIuWZQ3psVBKPSFEVr/Htu0B27YHNA8IIcKyrOEZlijnN5dSZ5S9EoAaZWYDINIFogxR4XxIWgc1i9Q0iyoipj4+SynA8/2lpmUWmMlGlQKj5HC+qgXenFlCC0nPTK1plFIvlUpta1ksgWmacTmQYRioVCqrCSEiDMP5hBChtSmKorRmoHYNWqO0SW1G5QOaQfq9rZNDTyLNqGYf45LipjUptHKL0kbqCWC42e9y62RpMn+odeFGj1FPsObmA1O7J93vplkv64mlx6a/R1GU1n3Tv7Xm+9pl6upSYOaWHQLRBE09NM8/Y1byxYYfpnWAeoROw9ORdN2djT3aMEmzdnmmiWqlVpM303S1CloXHDTbxQsXM+OAVt/EZixoTKvnbhFQ67tn3vPXnj2zr/o5rTXlR2o/8z79vbXtTP96pH7P7OeRxk0IEfp6qynXNP3khfg74QS0Ph37od5fbLXXB+iguWTyDvfiE0KETsV07ZfneZg1axZacexj9PfR9DNV0CpwoHG0RrMhwEkDQWWAhjqn7QvkelfCO6He3t7/HBsbW62LICil8H0fZ5999tmpVGrbO33+/8/0F8IG4l2ZrHEOWssZZ/rIS4hm0GJ4sTq/C8Julv4y27YHWn1qGIbzOedzddpxjP4+miFsZTaUlzCt4QQQFPAA6UJqTRZuY3nTbG7Ej89Be9f2aOuIsxUkOUbvjOhbNwGaR122nFhMPYB6TW1uaPS7IGidggDQ5UxCR7hC6MNwj9HfS0fUbAniKoAdPpM0cqEUizWZwlOAqc9HA+JD8t7xITpaqMe0+d2n/wtu3fRvrNxZUAAAAABJRU5ErkJggg==">
+    <h1>Catálogo de Brindes<small>Personalizados com a sua marca</small></h1>
+  </div>
+  <div class="tools">
+    <a class="btn wa" id="btnWa" href="https://wa.me/5537920006433" target="_blank" rel="noopener" aria-label="Pedir orçamento pelo WhatsApp (37) 92000-6433">
+      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.2-.4.7-1.4.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6a2.7 2.7 0 0 0 1.8-1.2 2.2 2.2 0 0 0 .2-1.3c-.1-.1-.2-.2-.4-.3Z"/></svg><span class="lbl">Pedir orçamento</span>
+    </a>
+    <a class="btn icon" href="https://www.instagram.com/_imprima/" target="_blank" rel="noopener" aria-label="Instagram @_imprima" title="Instagram @_imprima">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+    </a>
+    <button class="btn" id="btnCats" type="button" aria-label="Categorias">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 6h16M4 12h16M4 18h10"/></svg><span class="lbl">Categorias</span>
+    </button>
+    <button class="btn" id="btnSearch" type="button" aria-label="Buscar produto">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg><span class="lbl">Buscar</span>
+    </button>
+    <button class="btn icon" id="btnZoom" type="button" aria-label="Ampliar página" title="Ampliar">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5M11 8v6M8 11h6"/></svg>
+    </button>
+    <button class="btn icon" id="btnFull" type="button" aria-label="Tela cheia" title="Tela cheia">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 9V4h5M20 9V4h-5M4 15v5h5M20 15v5h-5"/></svg>
+    </button>
+  </div>
+</header>
+
+<main class="stage" id="stage">
+  <button class="side prev" id="sidePrev" type="button" aria-label="Página anterior"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="m15 5-7 7 7 7"/></svg></button>
+  <div class="book-wrap" id="wrap"><div id="book"></div></div>
+  <button class="side next" id="sideNext" type="button" aria-label="Próxima página"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="m9 5 7 7-7 7"/></svg></button>
+</main>
+
+<footer class="bottom">
+  <button class="btn icon" id="prev" type="button" aria-label="Página anterior"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="m15 5-7 7 7 7"/></svg></button>
+  <div class="cat-now" id="catNow"></div>
+  <input type="range" id="slider" min="1" max="420" value="1" aria-label="Ir para página">
+  <label class="count">Pág. <input id="pageIn" inputmode="numeric" value="1" aria-label="Número da página"> de <span id="total">420</span></label>
+  <button class="btn icon" id="next" type="button" aria-label="Próxima página"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="m9 5 7 7-7 7"/></svg></button>
+</footer>
+
+<div class="scrim" id="scrim" hidden></div>
+<aside class="drawer" id="drawer" hidden aria-label="Navegação do catálogo">
+  <header><h2>Navegar no catálogo</h2><button class="btn icon" id="closeDrawer" type="button" aria-label="Fechar"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 6l12 12M18 6 6 18"/></svg></button></header>
+  <div class="tabs" role="tablist">
+    <button class="tab" id="tabCats" role="tab" aria-selected="true" type="button">Categorias</button>
+    <button class="tab" id="tabSearch" role="tab" aria-selected="false" type="button">Buscar produto</button>
+  </div>
+  <div class="search" id="searchBox" hidden><input id="q" type="search" placeholder="Nome ou código (ex.: garrafa, 18704)" autocomplete="off"></div>
+  <div class="hint" id="hint" hidden></div>
+  <div class="list" id="list"></div>
+</aside>
+
+<div class="zoom" id="zoom" hidden>
+  <header>
+    <span id="zoomLbl">Página</span>
+    <button class="btn icon" id="zOut" type="button" aria-label="Diminuir zoom"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 12h12"/></svg></button>
+    <button class="btn icon" id="zIn" type="button" aria-label="Aumentar zoom"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 12h12M12 6v12"/></svg></button>
+    <button class="btn" id="zClose" type="button">Fechar</button>
+  </header>
+  <div class="pane" id="zPane"><div class="pane-in" id="zIn2"></div></div>
+</div>
+
+<script src="js/page-flip.browser.js"></script>
+<script>
+(function () {
+  var TOTAL = 420, PW = 595, PH = 842;
+  var CATS = [[5,"Garrafas e Squeezes"],[65,"Canecas e Copos"],[91,"Bar e Bebidas"],[103,"Cozinha"],[131,"Bolsas Térmicas"],[147,"Sacolas"],[159,"Mochilas e Bolsas"],[195,"Malas e Frasqueiras"],[205,"Viagem"],[211,"Estojos e Nécessaires"],[227,"Organizadores"],[235,"Cuidados Pessoais"],[251,"Moda"],[255,"Guarda-Chuva"],[261,"Diversos"],[265,"Expositores"],[271,"Eletrônicos"],[275,"Carregadores"],[285,"Caixa de Som"],[293,"Fones de Ouvido"],[299,"Acessórios de Celular"],[305,"Informática"],[311,"Escritório"],[321,"Blocos e Cadernetas"],[341,"Canetas"],[381,"Chaveiros"],[395,"Ferramentas"],[405,"Lanternas e Luminárias"],[411,"Ventilação e Climatizadores"]];
+  var PROD = [["2025","",1],["305","",3],["02112","Garrafa Térmica 400ml",6],["18704","Garrafa Térmica 1 litro",6],["KIT18639","Kit Garrafa Térmica 450ml",6],["18639","Garrafa Térmica 450ml",7],["18910","Garrafa Térmica 1 Litro",7],["18518","Garrafa Térmica 780ml",8],["17007","Garrafa Térmica 350ml",8],["18904","Garrafa Térmica 320ml",8],["18822","Garrafa Térmica 800ml",9],["18679","Garrafa Térmica 700ml",10],["05063","Garrafa Térmica 1,2 Litros",10],["05029","Garrafa Térmica 950ml",10],["04098","Garrafa Térmica 700ml",11],["18711","Garrafa Térmica 850ml",11],["18705","Garrafa Térmica 500ml",11],["18846","Garrafa Térmica 850ml",12],["04078","Garrafa Térmica 1L",12],["06501","Garrafa Térmica 700ml",12],["18906","Garrafa Térmica 460ml",13],["18678","Garrafa Térmica 1L",14],["04205","Garrafa Térmica 400ml",14],["18816","Garrafa Térmica 550ml",14],["01116","Garrafa Térmica 500ml",14],["08039","Garrafa Térmica 600ml",15],["02087B","Garrafa Térmica 450ml",15],["02407","Garrafa Térmica 420ml",16],["18913","Garrafa Térmica 1 Litro",16],["04097","Garrafa Térmica 550ml",16],["18634","Garrafa Térmica 500ml",17],["02090","Garrafa Térmica 1 Litro",17],["18677","Garrafa Térmica 1,4L",17],["02090B","",17],["18833","Garrafa Térmica 450ml",18],["18903","Garrafa Térmica 750ml",18],["18549","Garrafa Térmica 275ml",18],["18699","Garrafa Térmica 230ml",19],["05032","Garrafa Térmica 470ml",19],["18916","Garrafa Térmica 900ml",19],["18815","Garrafa Térmica 1,25L",20],["18784","Garrafa Térmica 800ml",20],["14794","Garrafa Térmica 400ml com Display LED",21],["18709","Garrafa Térmica 1,1 Litros",21],["18905","Garrafa Térmica 750ml",21],["06097","Garrafa Térmica 950ml",22],["18855","Garrafa Térmica 850ml",22],["01593","Garrafa Térmica 1,4 Litros",22],["18750","Garrafa Térmica 1,5L",23],["02790","Garrafa Térmica 750ml",23],["05087","Garrafa Térmica 1L",23],["18723","Garrafa Térmica 420ml",24],["14784B","Garrafa Térmica 500ml",24],["18941","Garrafa Térmica 350ml",25],["03968","Garrafa Térmica 200ml",26],["18715","Garrafa Térmica 400ml",26],["02403","Garrafa Térmica 400ml",26],["01115","Garrafa Térmica Inox 350ml",27],["18889","Garrafa Térmica 480ml",27],["18710","Garrafa Térmica 850ml",27],["18642","Garrafa Térmica 500ml",28],["08198","Garrafa Térmica Inox 1,2L",29],["18933","Garrafa Térmica 650ml",30],["18552","Garrafa Inox 750ml",31],["18547","Garrafa Inox 700ml",31],["17010B","Garrafa Inox 750ml",31],["17011F","Garrafa Inox 750ml",31],["06012","Garrafa Inox Parede Dupla 250ml",32],["17010F","Garrafa Inox 750ml",32],["18552F","Garrafa Inox 800ml",32],["18725","Garrafa Inox 800ml",32],["18637","Garrafa Inox 650ml",33],["18726I","Garrafa Inox 800ml",33],["18782","Garrafa Inox 800ml",33],["17011C","Garrafa Inox 750ml",33],["18778","Garrafa Inox 540ml",34],["18888","Garrafa Inox 1L",34],["18732","Garrafa Inox 1,1L",34],["18732S","Garrafa Inox 1,1L",35],["18783B","Garrafa Inox 500ml",35],["18783F","Garrafa Inox 500ml",35],["18829","Garrafa Inox 750ml",35],["08280","Garrafa Inox 650ml",36],["18732B","Garrafa Inox 1,1 Litros",36],["18726A","Garrafa Alumínio 800ml",37],["18781","Garrafa de Alumínio 600ml",37],["07047","Garrafa Alumínio 630ml",37],["06018","Garrafa de Alumínio 500ml",38],["18922","Garrafa Alumínio 800ml",38],["05074","Garrafa de Vidro 750ml",39],["05078","Garrafa de Vidro 650ml",39],["08765","Garrafa de Vidro 470ml",39],["05076","Garrafa de Vidro 1L",39],["05077","Garrafa de Vidro 400ml",40],["05075","Garrafa de Vidro 650ml",40],["08279","Garrafa Plástica 950ml",41],["18551","Garrafa Plástica 730ml",42],["18695","Garrafa Plástica 600ml",42],["17012","Garrafa Plástica 700ml",42],["08233","Garrafa Plástica 2 em 1 550ml",43],["14995","Garrafa com Misturador 380ml",44],["02429","Garrafa Plástica 610ml",44],["02416","Garrafa Plástica 700ml",44],["02423","Garrafa Plástica 700ml",45],["18791","Garrafa Plástica 780ml",45],["18792","Garrafa Plástica 750ml",45],["18706","Squeeze Inox 900ml",47],["18780","Squeeze Inox 880ml",47],["9139I","Squeeze Inox 500ml",47],["18550","Squeeze Inox 750ml",48],["18821","Squeeze Inox 750ml",48],["18558","Squeeze Inox 600ml",48],["12487B","Squeeze Alumínio 600ml",49],["12487D","Squeeze Alumínio 600ml",49],["12487F","Squeeze Alumínio 600ml",49],["9139AS","Squeeze Alumínio Sublimático 500ml",50],["9139A","Squeeze Alumínio 500ml",50],["09138","Squeeze Alumínio 420ml",50],["12190","Squeeze Alumínio 450ml",51],["02048","Squeeze Alumínio 600ml",51],["18757","Squeeze Alumínio 800ml",51],["18731B","Squeeze Alumínio 800ml",52],["18731","Squeeze Alumínio 800ml",52],["18746","Squeeze Alumínio 800ml",52],["18626","Squeeze Plástico 700ml",53],["13764B","Squeeze Plástico 700ml com Infusor",53],["12459","Squeeze Dobrável 480ml",53],["18556","Squeeze Plástico 700ml",54],["07030","Squeeze Plástico 1L",54],["18799","Squeeze Plástico 640ml",54],["18696","Squeeze Plástico 1L",55],["13929","Squeeze 650ml Plástico",55],["18918","Squeeze Plástico 1L",56],["10038","Squeeze Plástico 600ml",56],["18737","Squeeze Plástico 730ml",56],["18718","Squeeze Plástico 700ml",56],["18925","Squeeze Plástico 850ml",57],["18553","Squeeze Plástico 700ml",58],["18917","Squeeze Plástico 1L",58],["08008","Squeeze Plástico 900ml",58],["18789","Squeeze Plástico 900ml",59],["06042","Squeeze Plástico 550ml",59],["06599","Squeeze Borrifador Plástico 650ml",59],["18698","Squeeze Plástico 1,1L",59],["18788","Squeeze Plástico 420ml",60],["18787","Squeeze Plástico 500ml",60],["06043","Squeeze Plástico 550ml",60],["02426","Squeeze Plástico 900ml",61],["09053","Squeeze Plástico 750ml",61],["06058","Squeeze Plástico 800ml",61],["05027G","Capa de Nylon para Garrafa",62],["05027M","Capa de Nylon para Garrafa",62],["05027P","Capa de Nylon para Garrafa",62],["06386","Suporte para Garrafa",62],["05026","Porta-copos ou Garrafas Isotérmico",63],["05024P","Porta-copos ou Garrafas Isotérmico",64],["05024M","Porta-copos ou Garrafas Isotérmico",64],["04365","Caneca Mágica de Cerâmica 350ml",66],["13282","Caneca Cerâmica 330ml",66],["06520","Caneca Acrílica 400ml",66],["01071","Caneca Acrílica 450ml",66],["18643","Caneca Bambu 500ml",67],["03099","Caneca de Bambu 300ml",67],["18862","Caneca Palha de Trigo 300ml",67],["18623","Caneca Inox Parede Dupla 250ml",68],["18761","Caneca Parede Dupla 370ml",68],["18624","Caneca Inox Parede Dupla 350ml",68],["12458","Caneca com Misturador 350ml",68],["18870","Caneca Inox Parede Dupla 350ml",69],["18720","Caneca Bicolor Parede Dupla 250ml",69],["18622","Caneca Inox Parede Dupla 230ml",69],["18869","Caneca Inox Parede Dupla 270ml",69],["03590","Caneca Inox 370ml",70],["05828","Caneca Inox de 450ml",70],["07392","Caneca Inox 180ml",70],["03889","Caneca Inox 400ml",70],["09097","Caneca Térmica 800ml",71],["04070","Caneca Térmica 700ml",71],["04081","Caneca Térmica 350ml",71],["18912","Caneca Térmica 350ml",72],["04083","Caneca Térmica 700ml",72],["06061","Caneca Térmica 350ml",72],["08056","Caneca Térmica 1,2L",73],["06033","Caneca Térmica 1,2L",73],["18657","Caneca Térmica 450ml",73],["18838","Caneca Térmica 400ml",73],["04093","Caneca Térmica 350ml",74],["18839","Caneca Térmica 500ml",74],["18700","Caneca Térmica 500ml",74],["04082L","Caneca Térmica com Abridor 500ml",75],["04082T","Caneca Térmica com Abridor 500ml",75],["06061B","Caneca Térmica 350ml",75],["18700B","Caneca Térmica 500ml",75],["18640","Caneca Térmica 500ml",76],["18641","Caneca Térmica 500ml com Display LED",76],["04080","Copo Térmico 473ml",77],["04080B","Copo térmico 473ml",77],["18645L","Copo Térmico 500ml com Abridor",77],["14726L","Copo Térmico 320ml",77],["04071","Copo Térmico 550ml",78],["14724P","Copo Térmico Inox 350ml",78],["18655","Copo Térmico 500ml",78],["04084","Copo Térmico Bambu 600ml",79],["18749B","Copo Térmico 400ml com Caixa de Som",79],["04014B","Copo Térmico Inox 380ml",79],["18645A","Copo Térmico 500ml com Abridor",80],["14726B","Copo Térmico 320ml",80],["14724","Copo Térmico 500ml",80],["18749","Copo Térmico 400ml com Caixa de Som",80],["18907","Copo Térmico 280ml",81],["04014","Copo Térmico 380ml Multiuso",81],["08245","Copo Térmico 150ml",82],["18722","Copo Parede Dupla Inox 300ml",82],["04072","Copo Térmico 350ml",82],["03970","Copo Inox 150ml",83],["03969","Copo Inox 100ml",83],["18908","Copo Inox 480ml",83],["01001","Copo de Vidro 500ml",84],["06096","Copo Vidro Parede Dupla 160ml",84],["06094","Copo Vidro Parede Dupla 80ml",84],["03699","Copo Fibra de Trigo 450ml",85],["18644","Copo Bambu 500ml",85],["03006","Copo Fibra de Bambu 350ml",85],["03006A","Copo Fibra de Bambu 350ml",85],["03006T","Copo Plástico 350ml",86],["02826","Copo Plástico 350ml",86],["18861","Copo Palha de Trigo 310ml",86],["03006B","Copo Fibra de Bambu 350ml",86],["02121","Copo de Transição Infantil 350ml",87],["02417","Copo Plástico 600ml",87],["12777","Copo Porta Foto 350ml",87],["18863","Copo Retrátil Plástico 125ml",88],["18636","Copo Retrátil de Silicone 150ml",88],["18578","Copo Retrátil de Silicone 150ml",89],["08210","Porta-copos Cortiça",90],["08505","Porta-Copos Cortiça",90],["18785","Coqueteleira Plástica 700ml",92],["18681","Coqueteleira Inox 600ml",92],["18915","Coqueteleira Térmica 700ml",92],["18682","Coqueteleira Inox 750ml",93],["18786","Coqueteleira Plástica 500ml",93],["12942","Coqueteleira Plástica 600ml",93],["10390","Porta Whisky 6oz",94],["06007","Porta Whisky 7oz",94],["S01782","Porta Whisky 7oz",94],["03004","Saca-rolhas Elétrico",95],["18621","Saca-rolhas Metal com 2 Estágios",95],["18560","Saca-rolhas Elétrico com LED",95],["18555","Saca-rolhas Elétrico com Led",95],["06385","Abridor de Garrafa Bambu",96],["01303","Abridor de Garrafa Madeira",96],["10695","Saca-rolhas Metal",96],["08122","Saca-rolhas Elétrico",96],["18713","Abridor de Garrafa",97],["01304","Abridor de Garrafa Madeira",97],["05062","Abridor Multiferramentas",97],["05022","Porta-Garrafas Isotérmico Duplo",98],["18736","Porta-Garrafas TNT",98],["18865","Porta-Garrafas Térmico Duplo",98],["18864","Porta-Garrafas Térmico",98],["08148","Porta Vinho PU",99],["12046","Kit Vinho Xadrez 4 Peças",100],["11870","Kit Vinho Garrafa 5 Peças",100],["10071","Kit Vinho 2 Peças",100],["05023","Porta-Garrafas Isotérmico",100],["03494","Kit Vinho 4 Peças",101],["03493","Kit Vinho 4 Peças",101],["11871","Kit Vinho Garrafa 3 Peças",101],["03495B","Kit Vinho 4 Peças",101],["08128","Kit Vinho com Jogo de Baralho",102],["08169","Kit Vinho Bambu 3 Peças",102],["03495","Kit Vinho 4 Peças",102],["12384","Kit Vinho Garrafa 4 Peças",102],["06221","Kit Queijo 2 Peças",104],["06222","Kit Queijo 4 Peças",104],["12222","Kit Queijo 5 Peças",104],["05222","Kit Queijo 5 Peças",104],["04222","Kit Queijo 6 Peças",105],["18620","Kit Queijo 4 Peças",105],["03222","Kit Queijo 4 Peças",105],["08542","Kit Queijo 5 Peças",105],["08222","Kit Queijo 3 Peças",106],["18629","Kit Queijo 3 Peças",106],["18628","Kit Queijo 3 Peças",106],["18627","Kit Queijo 3 Peças",106],["18619","Petisqueira de Bambu",107],["18610","Petisqueira de Bambu",107],["12957","Kit Pizza 3 Peças",107],["18613","Petisqueira de Bambu",108],["18669","Petisqueira Quadrada",108],["18609","Petisqueira de Bambu",108],["18614","Petisqueira de Bambu",108],["18611","Petisqueira de Bambu",109],["18616","Petisqueira de Bambu",109],["18581","Petisqueira de Bambu",109],["18612","Petisqueira de Bambu",110],["18618","Petisqueira de Bambu",110],["18615","Petisqueira de Bambu",110],["18666PC","Petisqueira Pequena",111],["18666M","Petisqueira Média",111],["18666G","Petisqueira Grande",111],["18599","Tábua de Corte com Canaleta",112],["18583","Tábua de Corte com Canaleta",112],["18586","Tábua de Corte com Canaleta",113],["18587","Tábua de Corte com Canaleta",113],["18592","Tábua de Corte com Canaleta",113],["18591","Tábua de Corte com Canaleta",114],["18590","Tábua de Corte com Canaleta",114],["18608","Tábua de Corte com Canaleta",114],["18580","Tábua de Corte com Canaleta",114],["18600","Tábua de Corte com Alça",115],["18584","Tábua de Corte com Canaleta",115],["18589","Tábua de Corte com Alça",115],["18582","Tábua de Corte",115],["18664M","Tábua Redonda Média",116],["18664P","Tábua Redonda Pequena",116],["18670","Tábua Redonda",116],["18664G","Tábua Redonda Grande",116],["07443","Kit Churrasco 2 Peças",117],["07447","Kit Churrasco 2 Peças",117],["12089","Kit Churrasco 8 Peças",117],["08016","Kit Churrasco 5 Peças",118],["02250","Kit Churrasco 5 Peças",118],["01644","Kit Churrasco 4 Peças",118],["01346","Kit Churrasco 10 Peças",118],["12071","Kit Churrasco 7 Peças",119],["07444","Kit Churrasco 4 Peças",119],["08097","Kit Churrasco 5 Peças",119],["05184","Kit Churrasco 8 Peças",119],["18893","Kit Churrasco 9 Peças",120],["07446","Kit Churrasco 3 Peças",120],["18894","Kit Churrasco 4 Peças",120],["14699B","Kit Churrasco 5 Peças",121],["08199","Kit Churrasco 4 Peças",121],["01906","Kit Churrasco 17 Peças",121],["18895","Kit Churrasco 6 Peças",122],["01347","Kit Churrasco 4 Peças",123],["09018","Kit Churrasco 9 Peças",123],["02759","Kit Churrasco 3 Peças",123],["01345","Kit Churrasco 5 Peças",123],["18891","Kit Churrasco 3 Peças",124],["08123","Kit Churrasco 6 Peças",124],["12462B","Kit Churrasco 4 Peças",124],["08096","Kit Churrasco 7 Peças",124],["03496","Kit Cozinha 3 Peças",125],["10081B","Kit Facas 5 Peças",125],["09052","Kit Churrasco 6 Peças",125],["18685","Kit Utensílios 3 Peças",126],["18860","Kit Talheres 3 Peças",126],["07041","Kit Utensílios 12 Peças",126],["18684","Kit Utensílios 2 Peças",126],["07028","Marmita Hermética 800ml",127],["18858","Marmita Hermética Plástica 1L",127],["18859","Kit Talheres 3 Peças",127],["18856","Marmita Palha de Trigo 3 Divisórias",127],["08029","Kit Copo e Marmita Fibra de Bambu",128],["08060","Marmita Hermética 1,2L",128],["08061","Marmita Hermética 1 Litro",128],["06089","Marmita Fibra Trigo",128],["08212","Jogo Americano PVC",129],["08200","Descanso de Panela Cortiça",129],["18857","Marmita Hermética de Palha de Trigo",129],["06090","Marmita Dupla Fibra de Trigo",129],["06000","Misturador Elétrico Portátil",130],["13916","Processador de Alimentos Manual",130],["08155","Descanso de Panela Cortiça",130],["08121","Spray Culinário 100ml",130],["18604","Bolsa Térmica 18 Litros",132],["18503","Bolsa Térmica 4 Litros",132],["04739","Bolsa Térmica 18 Litros",132],["04465","Bolsa Térmica 6 Litros",133],["02596","Bolsa Térmica 12 Litros",133],["04628","Bolsa Térmica 10 Litros",133],["04334","Bolsa Térmica 33 Litros",133],["04846","Bolsa Térmica 7 Litros",134],["18605","Bolsa Térmica 33 Litros",134],["02399","Bolsa Térmica 6 Litros",134],["04044P","Bolsa Térmica 36 Litros",134],["04385","Bolsa Térmica 9 Litros",135],["18525","Bolsa Térmica 7,3 Litros",135],["02401","Bolsa Térmica 34 Litros",135],["18523","Bolsa Térmica 10 Litros",135],["01331","Bolsa Térmica 4 Litros",136],["18603","Bolsa Térmica 14 Litros",136],["06022","Bolsa Térmica Dupla 6 Litros",136],["02388","Bolsa Térmica 16 Litros",136],["02798","Bolsa Térmica 6 Litros",137],["07020","Cooler Térmico 62 Litros",137],["04357","Bolsa Térmica 10 Litros",137],["02400","Bolsa Térmica 10 Litros",137],["04044A","Bolsa Térmica 36 Litros 420D",138],["02697","Bolsa Térmca",138],["04045","Bolsa Térmica 15 Litros",138],["18871","Bolsa Térmica 9,5 Litros",138],["08239","Bolsa Térmica 8 Litros",139],["02099","Bolsa Térmica 5 Litros",140],["1330P","Bolsa Térmica 8 Litros",140],["06024","Bolsa Térmica 5 Litros",140],["08042","Bolsa Térmica 16 Litros",140],["01899","Bolsa Térmica 4 Litros",141],["18840","Bolsa Térmica 8,7 Litros",141],["07084","Bolsa Térmica 6 Litros",141],["18524","Bolsa Térmica 8,5 Litros",141],["02799","Bolsa Térmica 9 Litros",142],["02091","Bolsa Térmica 7,6 Litros",142],["02595","Bolsa Térmica 6 Litros",142],["18764","Bolsa Térmica 7 Litros",142],["18866","Bolsa Térmica Oxford 8 Litros",143],["04845","Bolsa Térmica 13 Litros",143],["01328P","Bolsa Térmica 2,6 Litros",143],["1329P","Bolsa Térmica 7 Litros",143],["06047","Bolsa Térmica 4 Litros",144],["18766","Bolsa Térmica Dupla 7 Litros",144],["07082","Bolsa Térmica 7 Litros",144],["08066","Bolsa Térmica 6,1 Litros",144],["18867","Bolsa Térmica 5 Litros",145],["07085","Bolsa Térmica 6 Litros",145],["04899","Bolsa Térmica 7 Litros",145],["04386","Bolsa Térmica 9,6 Litros",145],["07086","Bolsa Térmica 5 Litros",146],["08083","Bolsa Térmica 5,3 Litros",146],["18868","Bolsa Térmica 7 Litros",146],["04482","Bolsa Térmica Dupla 16 Litros",146],["18843","Sacola de Juta",148],["18742","Sacola de Juta",148],["18743","Sacola de Juta",148],["08067","Sacola de Linho",149],["08074","Sacola de Linho",149],["18842","Sacola de Juta",149],["18841","Sacola de Juta",149],["18844","Sacola de Lona",150],["18845","Sacola de Lona",150],["04198","Sacola de Algodão",150],["04399","Sacola de Algodão",150],["18745B","Sacola de Nylon",151],["02389","Kit Saco Impermeável",151],["18745","Sacola de Nylon",151],["08038","Sacola de Feltro",151],["18606","Sacola Poliéster 25L com Bolso Térmico",152],["08076","Sacola Compacta de Poliéster",152],["08075","Sacola de Poliéster",152],["06032","Sacola de Poliéster",153],["01699","Sacola rPET Térmica 10 Litros",153],["08137","Sacola de Poliéster 16 Litros",153],["18537P","Sacola TNT Metalizada",154],["18537G","Sacola TNT Metalizada",154],["18595","Sacola TNT Térmica 18 Litros",155],["04043","Sacola TNT com Bolso",155],["13780","Sacola TNT com Alça",155],["08053","Sacola Plástica",156],["08018","Sacola TNT",156],["08017","Sacola TNT",156],["02081","Sacola TNT sem Alça",156],["08054","Sacola Plástica",157],["08052","Sacola Plástica",157],["13433I","Sacola de Gelo para Bebidas",158],["04387","Sacola Plástica",158],["02079","Mochila Saco em Poliéster",160],["18601","Mochila Saco Impermeável",160],["05070","Mochila Saco Poliéster",160],["04060","Mochila Saco Poliéster",160],["02079B","Mochila Saco em Poliéster",161],["18602","Mochila Saco Impermeável",161],["18719","Mochila Saco Nylon Impermeável",161],["18744","Mochila Saco em PVC",161],["08078","Mochila Saco de Lona e Cortiça",162],["08087","Mochila Saco Lona",162],["18505","Mochila Saco TNT",162],["08108","Mochila Saco Algodão",162],["03034","Mochila de Nylon USB",163],["18539","Mochila de Nylon Dobrável 21L",163],["01320","Mochila de Nylon USB 21L",163],["03033","Mochila de Poliéster para Notebook",163],["04057","Mochila de Nylon USB 21L",164],["08147","Mochila PU Impermeável 23L",164],["20061","Mochila Couro Sintético USB 20L",164],["18373","Mochila de Nylon 30L",164],["08172","Mochila Couro Sintético USB 21L",165],["08041","Mochila Nylon 33L",166],["01351","Mochila de Nylon 26L",166],["05009","Mochila de Nylon USB 20L",166],["02103","Mochila de Nylon",166],["08302","Mochila Poliéster 32L",167],["01355","Mochila de Nylon 20L",167],["06045","Mochila Poliéster 29L",167],["09263","Mochila de Poliéster",167],["04069","Mochila Poliéster 26L",168],["09761","Mochila de Nylon USB 20L",168],["07055","Mochila Nylon 43L",168],["01352","Mochila de Nylon 23L",168],["08153","Mochila PU 18L",169],["02067","Mochila de Nylon",169],["18832","Mochila de Nylon Dobrável 23L",169],["01118","Mochila Couro SIntético 30L",169],["04508","Mochila Nylon 20L",170],["08133","Mochila 41L",170],["11329","Mochila de Nylon USB 21L",170],["01353","Mochila de Nylon 21L",171],["02096","Mochila de Poliéster Anti-Furto USB com Segredo",171],["07003","Mochila Nylon 23L",171],["01306","Mochila Anti-Furto USB",171],["04099","Mochila Nylon 42L",172],["08192","Mochila de Couro SIntético 26L",172],["01325C","Mochila de Nylon USB 21L",172],["01356","Mochila de Nylon 27L",172],["01326","Mochila de Nylon USB 21L",173],["18834","Mochila Oxford Dobrável 16L",173],["08143","Mochila de Couro Sintético 34L",173],["08156","Mochila PU Impermeável ANtifurto 22L",173],["08164","Mochila Antifurto 23L",174],["03029","Mochila Poliéster",174],["07006","Mochila rPET de 9L",174],["06065","Mochila Funcional Oxford 19L",174],["05008","Mochila de Couro Sintético 30L",175],["08032","Mochila de Poliéster USB 25L",175],["08034","Mochila Nylon 30L",175],["01444","Mochila Poliéster 19L",175],["01325B","Mochila de Nylon USB 21L",176],["07011","Mochila de Nylon 29L",176],["04057B","Mochila de Nylon USB 24L",176],["02105","Mochila Nylon 17L",177],["08051","Mochila de Nylon 25L",177],["17003","Mochila de Nylon Poliéster",177],["01350B","Mochila de Nylon 22L",178],["07002","Mochila de Nylon 21L",178],["07004","Mochila Nylon 23L",179],["01320B","Mochila de Nylon USB 21L",179],["05007","Mochila de Nylon 27L",179],["03034B","Mochila de Nylon 21L",180],["04508B","Mochila 27L",180],["17004","Mochila de Nylon Poliéster para Notebook",180],["01350","Mochila de Nylon 22L",181],["01354","Mochila de Nylon 22L",181],["02066","Mochila de Nylon",181],["07001","Mochila de Nylon 20L",181],["01401","Mochila Funcional Oxford 19L",182],["01805","Mochila de Poliéster USB 30L",182],["01325","Mochila de Nylon USB 21L",182],["01318","Mochila de Nylon USB 20L",182],["04058","Mochila de Ombro USB Anti-Furto",183],["08194","Mochila de Ombro 6L",183],["08131","Mochila de Ombro USB",183],["01063","Mochila Nylon 14L",183],["08193","Mochila de Ombro 6L",184],["04059","Mochila de Ombro USB",184],["16019","Mochila de Ombro USB",184],["01229","Mini Bolsa Transversal de Nylon",185],["08064","Mini Bolsa Transversal de PET",185],["08055","Mini Bolsa Transversal em Algodão",185],["01442","Bolsa de Ombro Nylon",185],["08130","Pochete de Poliéster",186],["08098","Pochete de Nylon Impermeável",186],["18546","Pochete Antifurto Esportiva",186],["01227","Mini Bolsa Transversal de Nylon",186],["18884","Pochete Esportiva Oxford",187],["18886","Pochete Esportiva Lycra",187],["18885","Pochete Oxford",187],["18883","Pochete Esportiva Neoprene",187],["04086","Bolsa Esportiva de Poliéster 28L",188],["05069","Bolsa de Viagem 28L",188],["02093","Bolsa de Viagem Dobrável",188],["04085","Bolsa Esportiva de Poliéster 35L",188],["12095","Bolsa de Ombro",189],["04091","Bolsa Dobrável e Expansível 35L",189],["08125","Bolsa de Lona",189],["04042","Bolsa Oxford 28L",189],["07087","Bolsa Esportiva 46L",190],["08077","Bolsa de Lona",190],["05068","Bolsa Esportiva 25L",190],["05014","Bolsa Esportiva 32L",190],["18593","Bolsa Impermeável de Poliéster 23L",191],["05013","Bolsa Esportiva 3L",191],["05096","Bolsa Esportiva 39L",192],["04041","Bolsa Poliéster 33L",192],["03012P","Plaquinha Metálica",193],["03012","Plaquinha Metálica",193],["03028","Mochila de Carrinho Padrão Bagagem de Mão",193],["01443","Mochila 27L com Rodinhas",193],["21380","Plaquinha Metálica",194],["09800","Plaquinha Metálica",194],["21388","Plaquinha Metálica",194],["21390","Plaquinha Metálica",194],["08215","Mala 51 Litros",196],["08216P","Mala de Bordo ABS 32 Litros",197],["08216G","Mala ABS 49 Litros",197],["06050","Mala de Viagem 38 Litros",197],["06051","Mala de Viagem 64 Litros",197],["06070G","Mala de Viagem 48 Litros",198],["06070P","Mala de Bordo 30 Litros",198],["06070M","Mala de Bordo 47 Litros",198],["06067","Mala de Bordo 40 Litros",199],["06068","Mala de Viagem 64 Litros",199],["06069","Mala de Viagem 95 Litros",199],["08264","Mala de Viagem 94 Litros",200],["08263","Mala de Viagem 69 Litros",200],["08262","Mala de Viagem 41 Litros",200],["08244","Mala de Viagem 105 Litros",201],["08243","Mala de Viagem 66 Litros",201],["08242","Mala de Viagem 39 Litros",201],["08171","Mala de Viagem 36 Litros",202],["08144","Mala de Bordo 43L",202],["06057","Mala de Viagem 74 Litros",202],["06056","Mala de Viagem 46 Litros",203],["08261","Frasqueira Plástica",203],["06066","Frasqueira Plástica",204],["18930","Kit Viagem 3 Peças",206],["18929","Kit Viagem Plástico 6 Peças",206],["18928","Kit Viagem 10 Peças",206],["12480","Kit Viagem com 3 Peças",207],["18536","Kit Viagem 6 Peças",207],["18535","Kit Viagem 5 Peças",207],["18042","Kit Viagem 3 Peças",208],["18881","Porta-passaporte em Couro Sintético",209],["18880","Porta-passaporte em Couro Sintético",209],["01199","Tag Identificador de Bagagem",209],["01009","Tag Identificador de Bagagem",210],["01008","Tag Identificador de Bagagem",210],["07076","Identificador de Bagagem",210],["02201","Estojo Escolar de Feltro",212],["08127","Estojo de Couro Sintético",212],["08069","Estojo Plástico Holográfica",212],["08089","Estojo de Malha de Nylon",213],["01909","Estojo de Nylon",213],["08036","Estojo de Nylon",213],["18501","Nécessaire de Nylon",214],["18506","Nécessaire Nylon Oxford",214],["18507","Nécessaire Nylon Oxford",214],["18516","Nécessaire Nylon Oxford",214],["18753","Nécessaire Poliéster",215],["18804","Nécessaire PU",215],["18538","Kit Nécessaires 6 Peças",215],["07077","Kit Nécessaire Duas Peças",215],["18873","Nécessaire Poliéster",216],["01228P","Nécessaire PVC Impermeável com Plaquinha",216],["18508","Nécessaire Sarja",216],["18738","Nécessaire Poliéster",217],["18872","Nécessaire com 3 Compartimentos",217],["18650","Nécessaire PU impermeável",217],["08234","Nécessaire Poliéster",218],["18647M","Nécessaire PVC Impermeável",219],["18647P","Nécessaire PVC Impermeável",219],["18810","Nécessaire PVC",219],["18647G","Nécessaire PVC Impermeável",219],["18813","Nécessaire PVC Impermeável",220],["02092","Nécessaire Plástica",220],["18686","Nécessaire Organizadora de Poliéster",220],["18533","Nécessaire Nylon Impermeável",220],["18651","Nécessaire Sintética Holográfica",221],["18812","Necessaire PVC Impermeável",221],["18773","Nécessaire de Couro Sintético",221],["18811","Nécessaire PU",221],["18806","Nécessaire Nylon",222],["18805","Nécessaire Poliéster",222],["18534","Necessaire PVC Impermeável",222],["18807","Nécessaire Nylon",222],["08040","Nécessaire de Malha de Nylon",223],["18809","Nécessaire PVC Impermeável",223],["18808","Nécessaire PVC Impermeável",223],["01708","Nécessaire PVC e Palha",223],["18776","Nécessaire PVC",224],["18506B","Nécessaire Organizadora com Gancho",224],["18777","Nécessaire PVC",224],["02405","Nécessaire de Couro Sintético",225],["08111","Nécessaire de Feltro",225],["18882","Nécessaire Nylon",225],["18774","Nécessaire Plástica",225],["08068","Nécessaire Plástico Holográfica",226],["18674","Nécessaire PU",226],["18775","Nécessaire Plástica",226],["01622B","Porta-Joias",228],["01622","Porta-Joias",228],["01618","Porta-Joias",228],["18717","Porta-Joias",229],["01716","Porta-Joias",229],["01383","Porta-Joias",229],["04011","Porta Óculos Plástico",230],["01074","Porta-Joias",230],["01474","Porta-Joias",230],["08073","Porta-joias com Espelho",231],["06017","Porta-Joias",231],["06054","Porta-Joias",231],["07046","Porta Objetos",232],["10997","Organizador Plástico",232],["07046B","Porta Objetos",232],["08031","Caixa Organizadora de Cosméticos",233],["10995","Organizador de Mesa",233],["08030","Caixa Organizadora de Cosméticos",233],["08141","Porta-Joias com Espelho",234],["18911","Porta-Joias com Espelho",234],["08142","Porta-Joias com Espelho",234],["08059","Mini Massageador Corporal",236],["18562","Massageador e Limpador Facial Elétrico",236],["04055","Massageador e Limpador Facial Elétrico",236],["10533","Massageador de 5 Garras",237],["08124","Massageador Portátil",237],["10554","Massageador Portátil",237],["18919","Escova com Espelho",238],["10342","Escova com Espelho",238],["10342B","Escova com Espelho",238],["18831","Espelho Duplo PU",239],["10250","Espelho Plástico Sem Aumento",239],["06059","Espelho de Aço Inox",239],["06037","Espelho Plástico Sem Aumento",239],["18945","Espelho Duplo Plástico",240],["18721","Espelho Plástico",240],["18607","Espelho Plástico Duplo Sem Aumento",240],["06060","Espelho de Aço Inox",240],["10232","Espelho Plástico Duplo Sem Aumento",241],["06027","Espelho de Aço Inox",241],["06036","Espelho Plástico Sem Aumento",241],["12069","Espelho Plástico Duplo Sem Aumento",241],["01764","Espelho Plástico Duplo com Aumento",242],["09810","Espelho Plástico Duplo Sem Aumento",242],["18830","Espelho Duplo Revestido em PU",242],["18878","Kit Pincel 5 Peças",243],["18879","Kit Pincel 5 Peças",243],["18758","Espelho Plástico",243],["01123","Espelho Dobrável com Led",243],["18877","Kit Pincel 8 Peças",244],["18874","Kit Pincel 5 Peças",244],["18875","Kit Pincel 5 Peças",244],["10127","Kit Manicure 15 Peças",245],["06040","Kit Manicure 7 Peças",245],["18724","Kit Manicure 16 Peças",245],["18900","Kit Manicure 10 Peças",246],["01361","Kit Manicure 6 Peças",247],["18724B","Kit Manicure 16 Peças",247],["01361B","Kit Manicure 7 Peças",247],["01518B","Máquina de Cortar Cabelo Recarregável",248],["10124","Kit Masculino 12 Peças",248],["01495","Máquina de Cortar Cabelo Recarregável",248],["05072","Kit Costura Plástico",249],["03083","Aparador de Barba",249],["03080","Aparador de Barba",249],["18814","Bolinha Antistress PU",250],["01895","Tapete Yoga TPE Ecológico",250],["18897","Chapéu Bucket Dobrável",252],["05050","Chapéu de Palha",253],["18818","Boné Poliéster Aba Curva",253],["05052","Chapéu Bucket",254],["05051","Viseira de Palha",254],["02075","Guarda-chuva Automático",256],["05044","Guarda-chuva Automático com Proteção UV",256],["05046","Guarda-chuva Automático",256],["02078","Guarda-chuva Invertido",256],["06063","Guarda-chuva Automático",257],["05099","Guarda-chuva Automático",257],["05086","Guarda-chuva Automático",257],["06041","Guarda-chuva Automático",257],["05168","Guarda-chuva UPF50+",258],["05169","Guarda-chuva Manual",258],["05045","Guarda-chuva Manual com Proteção UV",258],["18680","Guarda-chuva Automático",258],["05198","Guarda-chuva Manual",259],["12826","Kit Chuva 2 Peças",259],["05197","Guarda-chuva Manual",260],["05046B","Guarda-chuva Automático",260],["18820","Tapete Grande de Secagem Rápida",262],["18819","Tapete Médio de Secagem Rápida",262],["10006","Porta Bolsa de Metal Dobrável",262],["04087","Kit Frescobol MDF",262],["03153","Garrafa Bebedouro Pet 420ml",263],["03152","Garrafa Bebedouro Pet 400ml",263],["18828","Pulseira de Silicone",263],["03154","Garrafa Bebedouro Pet 420ml",264],["03150","Tigela Dupla",264],["06255","Expositor Porta-retrato A4",266],["06252","Expositor Porta-retrato A6",266],["06293","Expositor Porta-retrato A6",266],["06291","Expositor Porta-retrato A4",267],["06212","Expositor Porta-retrato A6",267],["06251","Expositor Porta-retrato A5",267],["06211","Expositor Porta-retrato A5",268],["06292","Expositor Porta-retrato A5",268],["06213","Expositor Porta-retrato A7",269],["06214","Expositor Porta-retrato A8",269],["18931","Quadro de Mensagens LED com",270],["18660","Smartwatch D20",272],["04358","Relógio de Madeira com  Carregamento",272],["18661","Smartwatch D118",272],["18563","Relógio de Madeira com Display LED",273],["08119","Aspirador de Pó 3 em 1",273],["04068","Relógio Digital",273],["08088","Relógio Digital LED com Despertador",273],["02732","Calculadora Plástica",274],["08007","Smartwatch Ultra",274],["05080","Balança Digital para Cozinha",274],["04052","Power Bank 10.000mAh com Lanterna",276],["06052","Power Bank 10.000mAh com Carregamento",276],["05089","Power Bank Plástico 5.000mAh",276],["05090","Power Bank 10.000mAh Multissaídas com",276],["04051","Power Bank 10.000mAh com",277],["07057","Power Bank 4.000mAh com Lanterna",277],["08000","Base de Carregamento com",277],["08009","Power Bank 10.000mAh com Lanterna e",277],["08014","Power Bank 10.000mAh com",278],["06073","Carregador via Indução",278],["18565","Carregador Rápido de Indução",279],["08157","Base de Carregamento por Indução",279],["05036","Power Bank 5.000mAh com Indicador LED",279],["05038","Power Bank 10.000mAh com Carregamento",279],["04050","Power Bank 8000mAh com Carregamento",280],["08013","Power Bank 10.000mAh com Lanterna e",280],["06004","Power Bank 5.000mAh",280],["04063","Base de Carregamento por Indução",280],["08011","Power Bank 10.000mAh com Lanterna",281],["18598","Estação de Carregamento 3 em 1",281],["06005","Power Bank 10.000mAh com Indicador LED",282],["05037","Power Bank 10.000mAh com Indicador LED",282],["08219","Power Bank 10.000mAh Multissaídas",283],["08188","Power Bank 10.000mAh",284],["12926","Caixa de Som Multimídia à prova D’Água",286],["04067","Caixa de Som Multimídia com Luminária",286],["06029","Caixa de Som Bluetooth TWS",286],["08003","Caixa de Som Multimídia TWS com Luzes RGB",286],["04362","Caixa de Som Multimídia",287],["08002","Caixa de Som Bluetooth TWS",287],["03019","Caixa de Som Multimídia com Relógio",287],["06030","Caixa de Som Multimídia TWS",287],["08023","Caixa de Som Multimídia TWS",288],["06093","Caixa de Som com Carregador Indução",288],["02015","Caixa de Som Multimídia",288],["06092","Caixa de Som com Luminária",288],["02017","Caixa de Som Multimídia com Porta Caneta e Luminária",289],["04361","Caixa de Som Multimídia Bambu",289],["08004","Caixa de Som Bluetooth TWS",289],["05054","Caixa de Som Bluetooth",289],["02071","Caixa de Som Multimídia com Relógio",290],["06031","Caixa de Som Multimídia",290],["02070","Caixa de Som Multimídia",290],["04366","Caixa de Som com Carregador por Indução",290],["05079","Caixa de Som Bluetooth",291],["08006","Caixa de Som Multimídia TWS com Luminária RGB",291],["05039","Caixa de Som Multimídia com Led",291],["04359","Caixa de Som com Carregador por Indução",291],["18544","Caixa de Som Multimídia",292],["08021","Caixa de Som Multimídia TWS",292],["04065","Caixa de Som Multimídia com Relógio",292],["02069","Caixa de Som Multimídia",292],["05048","Fone de Ouvido Bluetooth Touch",294],["06389","Fone de Ouvido Bluetooth",294],["02068-FOS","Fone de Ouvido Bluetooth Fosco",294],["08166","Fone de Ouvido Bluetooth",294],["04363","Fone de Ouvido Bluetooth",295],["12789","Fone de Ouvido Estéreo com Microfone",295],["06064","Fone de Ouvido Bluetooth Touch",295],["13474","Fone de Ouvido Bluetooth",295],["08024","Fone de Ouvido Bluetooth",296],["06081","Fone de Ouvido Bluetooth Touch",296],["06084","Fone de Ouvido Bluetooth",296],["08120","Fone de Ouvido Bluetooth",297],["06390","Fone de Ouvido Bluetooth",297],["05021","Fone de Ouvido Bluetooth Touch",298],["04364","Fone de Ouvido Bluetooth",298],["13888","Pop Socket",300],["14248","Anel de Iluminação para Selfie",300],["14222P","Protetor para Câmera",300],["18545","Suporte Veicular Gravitacional para Celular",301],["04062","Suporte Veicular com Carregamento de Indução",301],["03040","Suporte Retrátil para Celular e Tablet",301],["02003","Cabo de Dados V8",302],["13243","Cabo de Dados Lightning",302],["18762","Cabo USB retrátil 3 em 1",302],["10338","Cabo USB Retrátil 3 em 1",302],["05092","Estojo de Nylon",303],["18673","Estojo para Kit tecnológico",303],["10126","Estojo de Couro Sintético",303],["10125","Estojo de Couro Sintético",303],["02051","Estojo Emborrachado Redondo",304],["13578","Estojo Emborrachado Redondo",304],["04092B","Estojo de Nylon",304],["03007","Mouse Pad Ergonômico",306],["01810","Mouse Pad ergonômico",306],["04090","Pasta para Notebook 15’6 de Poliéster",306],["08151","Mouse Pad",306],["07056","Mouse Pad Couro Sintético",307],["01812","Mouse Pad",307],["18671","Pasta Executiva para Notebook 15 Polegadas",307],["12790","Mouse Wireless Retrátil",307],["08001","Mouse Pad Carregador",308],["06049G","Pasta para Tablet e Notebook 15,6",308],["12098","Carcaça Pen Card",308],["04061","Desk Pad com carregamento por indução",308],["04088","Pasta para Notebook 15’6 de Poliéster",309],["18672","Pasta Executiva para Tablet e Notebook 13 Polegadas",309],["06049P","Pasta para Tablet e Notebook 12,4",309],["06049M","Pasta para Tablet e Notebook 14",310],["08176","Pasta Notebook 15",310],["FY001","Porta Crachá",312],["06025","Porta Crachá Plástico",312],["06026","Cordão para Crachá Poliéster",312],["08247","Porta-cartão em Cortiça",313],["18041","Porta-cartão em Cortiça",313],["08248","Porta-cartão em Cortiça",313],["03015","Pasta Convenção com Fecho Imantado",314],["10109","Pasta Convenção Com Zíper",314],["12771I","Pasta Envelope Kraft",315],["10108","Pasta Convenção Com Calculadora",315],["08020","Pasta Convenção com Fecho Imantado",315],["06083","Kit Ecológico Caneta e Lapiseira Cortiça",316],["10998","Kit Executivo 3 Peças",316],["01988","Kit Executivo 3 Peças",317],["08162","",317],["08255","kit Executivo 2 Peças",318],["18836","Kit Executivo Ecológico 3 Peças",319],["08095","Kit Ecológico 2 Peças",319],["08254","Kit Executivo 2 Peças",319],["10889","Kit Executivo 2 Peças",320],["18835","Kit Caneta e Chaveiro Bambu",320],["08251","Kit Ecológico Caneta e Lapiseira Bambu",320],["05064","Bloco de Anotações Ecológico",322],["12244B","Bloco de Anotações com Autoadesivos",322],["06107","Agenda Semanal 2025",322],["06099","Agenda Diária 2025 Linho",322],["11911S","Bloco de Anotações com Autoadesivos",323],["06106","Bloco de Anotações com Autoadesivos e Caneta",323],["05049","Bloco de Anotações com",323],["18557","Bloco de Anotações com Autoadesivos",323],["12516","Bloco de Anotações Cubo",324],["10191","Bloco de Anotações com Autoadesivos",324],["12398","Mini Bloco Ecológico",324],["05067","Caderneta Emborrachada",325],["06101","Caderneta com Suporte de Celular",325],["08276","Bloco de Anotações com Autoadesivos",325],["05065","Bloco de Anotações com",325],["12513PI","Caderneta Emborrachada",326],["03009","Caderneta Emborrachada",326],["06102","Caderneta A5 em Linho",326],["03005","Caderneta de Couro Sintético",326],["08181","Caderneta Emborrachada",327],["03002","Caderneta Emborrachada",328],["12514","Caderneta Emborrachada",328],["18519","Caderneta Sintética com Fecho",328],["11196","Caderneta B5 PU",328],["03003","Caderneta Sintética",329],["11197","Caderneta em PU A5",329],["06103","Caderneta com Suporte Celular",329],["03024","Mini Caderneta Sintética Brilhante",329],["18759","Caderneta em Bambu",330],["18504","Caderneta com Fecho",330],["03008","Caderneta Ecológica",330],["11198","Caderneta em PU",330],["03013","Caderneta em Kraft",331],["18747","Caderneta Cortiça",331],["03013Q","Caderneta em Kraft Quadriculado",331],["18112","Caderneta A5 Cortiça",331],["18515","Caderno Ecológico com Autoadesivos",332],["06100","Caderneta A5 Poliéster",332],["11193","Caderno Plástico com Caneta",332],["08203","Caderno Fichário PU",333],["06098","Caderno Ecológico com Caneta",333],["12000","Caderno Ecológico",333],["05043","Caderno Pequeno com Divisórias",333],["18898","Caderno A5 Bambu",334],["05134","Caderno de Bambu com Caneta",334],["05071","Caderno A5 Plástico",334],["02601","Caderno Kraft B6 com Porta Caneta",335],["18748","Caderno de Papelão com Caneta",335],["18927","Caderno Bambu",335],["11195","Caderno com Autoadesivos e Caneta",336],["06105","Caderno A5 Feltro",336],["05058","Caderno A5 Plástico",336],["05061","Caderno B5 Kraft",337],["05059","Caderno B5 Plástico",337],["05060","Caderno A5 Kraft",337],["07050","Kit para Anotações com Caneta",338],["18739","Kit para Anotações com Caneta",338],["05058B","Caderno A5 Plástico",338],["18708","Kit Ecológico para Anotações",339],["11194","Kit Bloco de Anotações",339],["18683","Kit para Anotações com Caneta",340],["13362B","Caneta 3 em 1 Touch",342],["06082","Caneta Cortiça",342],["00007","Caneta Ecológica Papelão",342],["00002","Caneta Ecológica Papelão",342],["00708T","Caneta Fibra de Bambu",343],["12172","Caneta Ecológica de Bambu",343],["00001","Caneta Ecológica Papelão",343],["18542","Caneta Ecológica de Papelão",343],["00708P","Caneta Ecológica Papelão Touch",344],["13499P","Caneta Ecológica Papelão Touch",344],["06039","Caneta Cortiça",344],["00003","Caneta Ecológica Papelão",344],["00016","Caneta Ecológica Papelão",345],["08250","Caneta Ecológica de Bambu",345],["01090","Caneta Ecológica de Bambu",345],["08102","Caneta Ecológica Bambu Touch",345],["13546B","Caneta Metal Touch",346],["08103","Caneta Metal Touch",346],["ER143B","Caneta Metal",346],["02088","Caneta Metal Touch",346],["05019","Caneta Metal Touch",347],["06086","Caneta Metal Touch",347],["06071","Caneta Metal",347],["A1801","Caneta Metal",347],["04094","Caneta Metal Glitter",348],["05015","Caneta Metal Touch",348],["06076","Caneta Metal",348],["08134","Caneta Metal Touch Antiestresse",348],["05000","Caneta Metal Touch",349],["01018","Caneta Metal",349],["05015B","Caneta Metal Touch",349],["14949","Caneta Metal Touch",349],["06088","Caneta Metal",350],["06086B","Caneta Metal",350],["02055","Caneta Metal Touch",350],["08161T","Caneta Metal Touch",351],["06087C","Caneta Metal Touch",351],["06384","Caneta Metal",352],["A1803A","Caneta Metal",352],["06077","Caneta Metal",352],["15004","Caneta Metal Touch",352],["08135","Caneta Metal Touch Antiestresse",353],["01007","Caneta Metal e Cortiça",353],["08175","Caneta Metal Diamante",353],["06087T","Caneta Metal Touch",353],["A1812D","Caneta Metal",354],["ER157B","Caneta Metal Marca Texto",354],["01020","Caneta Metal Quadrada",354],["A1802F","Caneta Metal",354],["06087B","Caneta Metal",355],["18543","Caneta metal touch",355],["05011","Caneta Metal Touch",355],["14949B","Caneta Metal Touch",355],["06072","Caneta Metal Touch",356],["08268","Caneta Metal",356],["A1807B","Caneta Metal",356],["08270","Caneta Metal",356],["05017","Caneta Metal Touch",357],["08267","Caneta Metal",357],["05012","Caneta Metal Touch",357],["ER201B","Caneta Metal",358],["05010","Caneta Metal Touch",358],["08174","Caneta Metal Coroa",358],["08132","Caneta Metal Touch",358],["01006","Caneta Metal",359],["13546T","Caneta Metal Touch",359],["08160","Caneta Metal",359],["08152","Caneta Metal",359],["120B1","Caneta Metal",360],["08136","Caneta Metal",360],["08043","Caneta Metal Touch",360],["01010","Caneta Metal",361],["15011B","Caneta Metal Touch",361],["02077","Caneta Metal",361],["08159","Caneta Metal",361],["18548","Caneta Semimetal",362],["05020","Caneta Metal Touch",362],["15007B","Caneta Metal",362],["08161","Caneta Metal",362],["ER133F","Caneta Metal",363],["A1812B","Caneta Metal",363],["01006B","Caneta Metal",363],["08044","Caneta Metal",363],["ER145B","Caneta Metal",364],["ER133B","Caneta Metal",364],["00708","Caneta Plástica Touch com Suporte",364],["12638","Caneta Plástica Touch",364],["05091","Caneta Plástica Touch",365],["00807","Caneta Plástica",365],["12187","Caneta Plástica",365],["13499B","Caneta Plástica Touch com Suporte",365],["12411","Caneta Plástica",366],["12505","Caneta Plástica",366],["05073","Caneta Plástica Touch",366],["M3000","Caneta Plástica Marca Texto",366],["ER198B","Caneta Plástica Touch",367],["05030","Caneta Plástica",367],["08578","Caneta Plástica",367],["13499","Caneta Plástica Touch com Suporte",367],["00204","Caneta Plástica",368],["13230","Caneta Plástica Touch",368],["3017D","Caneta Plástica",368],["05031","Caneta Plástica",368],["ER2037","Caneta Plástica Marca Texto",369],["18522","Caneta Plástica",369],["13513","Caneta Plástica",369],["13830","Caneta Plástica",369],["11786","Caneta Plástica",370],["03011B","Caneta Plástica",370],["3017B","Caneta Plástica",370],["03011C","Caneta Plástica",370],["03017","Caneta Plástica",371],["00511","Caneta Plástica",371],["ER197B","Caneta Plástica Touch",371],["13690","Caneta Plástica",371],["13440","Caneta Plástica",372],["02089","Caneta Plástica",372],["06055","Caneta Plástica Marca Texto",372],["18521","Caneta Plástica",372],["18520","Caneta Plástica",373],["00634","Caneta Plástica",373],["03011D","Caneta Plástica",373],["12415","Caneta Plástica",374],["13830B","Caneta Plástica",374],["00401C","Caneta Plástica",374],["12729","Caneta Plástica",374],["00713","Caneta Plástica",375],["00401T","Caneta Plástica",375],["08094","Conjunto Caneta e Lapiseira Metal",375],["07005","Conjunto Caneta e Lapiseira Metal",375],["06078","Conjunto Caneta e Lapiseira Metal",376],["181PAR","Conjunto Caneta e Lapiseira Metal",376],["180PAR","Conjunto Caneta e Lapiseira Metal",376],["201PAR","Conjunto Caneta e Lapiseira Metal",376],["182PAR","Conjunto Caneta e Lapiseira Metal",377],["00006","Caneta Seringa Marca Texto",377],["12439","Marca Texto Boneco com Limpador de Tela e Teclado",377],["12230","Marca Texto",378],["12421","Marca Texto Splash",378],["06048","Marca Texto Flor",378],["08126","Estojo de Metal",378],["10398P","Estojo Fibra de Bambu",379],["05095","Porta Caneta Duplo",379],["01775","Veludo para Caneta",380],["07350","Estojo de Veludo",380],["09824","Chaveiro Metal Abridor",382],["01955","Chaveiro Metal",382],["01655","Chaveiro Metal",382],["12191","Chaveiro Metal Mosquetão",382],["12209","Chaveiro Metal",383],["06085B","Chaveiro Capacete EPI",383],["10032","Chaveiro Metal",383],["05691","Chaveiro Metal 3 em 1",383],["11608","Chaveiro Metal",384],["10028","Chaveiro Metal com Couro",384],["10415-BRI","Chaveiro Plástico Trena 1 Metro",384],["18691","Chaveiro Metal Abridor",384],["06062","Chaveiro Estilete",385],["18693","Chaveiro metal",385],["01595","Chaveiro Metal",385],["4267B","Chaveiro Metal Abridor",385],["06011G","Chaveiro de Identificação Pets",386],["06085","Chaveiro Capacete EPI",386],["06023","Chaveiro Abridor Multifunções",386],["4267F","Chaveiro Metal Abridor",386],["12195","Chaveiro Metal Mosquetão",387],["18692","Chaveiro Metal",387],["10872","Chaveiro Capacete EPI",387],["06010P","Chaveiro de Identificação Pets",387],["18760","Chaveiro de Couro Sintético",388],["02481","Chaveiro Metal Bambu",388],["05084","Chaveiro Metal Abridor",388],["10210","Chaveiro Metal Canivete 4 Funções",388],["11609","Chaveiro Metal",389],["18909","Chaveiro Metal Bambu",389],["08237","Chaveiro Metal Bambu",389],["06038","Chaveiro Madeira",389],["18823","Chaveiro Metálico",390],["06003","Chaveiro Abridor Madeira",390],["08238","Chaveiro Metal Abridor",390],["18827","Chaveiro Inox",390],["05083","Chaveiro Metal Abridor",391],["10201","Chaveiro Metal Plaquinha",391],["18826","Chaveiro Porta-foto",391],["02480","Chaveiro Metal Bambu",391],["18902","Chaveiro Madeira",392],["08236","Chaveiro Madeira",392],["18824","Chaveiro Metálico",392],["08235","Chaveiro Madeira",392],["10200","Chaveiro Metal Plaquinha",393],["18728","Chaveiro Acrílico Coração",393],["07008","Chaveiro Metal",393],["18733","Chaveiro Kit Manicure 4 peças",393],["18825","Chaveiro Metálico",394],["07042","Chaveiro Metal",394],["05085","Chaveiro Metal Abridor",394],["10385","Trena Emborrachada de 3 Metros",396],["2095","Kit Ferramenta 11 Peças",396],["18530","Kit Ferramenta 11 Peças",396],["14011","Kit Ferramenta 8 Peças",397],["10585","Trena Emborrachada de 5 Metros",397],["07494","Kit Ferramenta 19 Peças com Lanterna",397],["18734","Fita Métrica Plástica de 1,5m",397],["10800","Fita Métrica Plástica de 1,50m",398],["05082","Kit Ferramenta 11 Peças",398],["18514","Kit Ferramenta 7 Chaves com Lanterna",398],["14012","Kit Ferramenta 21 Peças",398],["02910","Fita Métrica Plástica de 1 Metro",399],["06020","Kit Ferramentas 8 Peças",399],["06046","Kit Ferramentas 25 Peças",399],["02487","Canivete Madeira",400],["18735","Fita Métrica 3 Metros",400],["10693","Canivete de Metal 11 funções",400],["06021","Kit Ferramentas 4 Peças",400],["06757","Canivete de Metal 9 Funções",401],["13349","Kit Ferramenta 20 Peças",401],["05081","Kit Ferramenta 8 Peças",401],["02050","Kit Ferramentas 7 Peças",401],["08065","Kit Ferramentas 9 Peças",402],["01263","Canivete Metal 7 funções",402],["08401","Kit Ferramentas 4 Peças",402],["06079","Kit Ferramentas 5 Peças",402],["06080","Kit Ferramentas 4 Peças",403],["18046","Kit Ferramenta 45 peças",403],["15081","Kit ferramentas 10 Peças",403],["08403","Kit Ferramentas 5 Peças",403],["08402","Kit Ferramentas 4 Peças",404],["11395","Mini Canivete de Metal 3 Funções",404],["07032","Kit Ferramentas 12 Peças",404],["07040","Kit Ferramentas 12 Peças",404],["08308","Luminária Led de Mesa",406],["05053","Lanterna Plástica Recarregável",406],["13383","Lanterna de Alumínio",406],["01397","Lanterna Metal Recarregável",407],["01291","Lanterna Plástica Dínamo",407],["08154","Luminária Led de Mesa",407],["01398","Lanterna Metal Recarregável",408],["06014","Luminária Retrátil Recarregável 14 Leds",408],["18923","Luminária Led de Mesa",408],["06013","Luminária Articulável Recarregável 10 Leds",409],["18924","Luminária Led de Mesa",409],["06015","Luminária Articulável em Led Recarregável",410],["05041","Mini ventilador Manual",412],["02795","Leque de Papel",412],["14738","Mini Umidificador com Led",413],["06075","Climatizador USB",413],["06002","Umidificador com LED",414],["05042","Mini Ventilador Recarregável",414],["06001","Mini Climatizador de Ar Portátil",415],["14402","Umidificador Ultrassônico com LED",415],["06016B","Leque de Papel",416],["05040","Mini Ventilador",417],["14738B","Mini Umidificador com Led",417],["02797","Leque Oxford",417],["2025","",419],["2025","",420]];
+  var $ = function (id) { return document.getElementById(id); };
+  var CH = 5;
+  var chunkOf = function (n) { return Math.ceil(n / CH); };
+  var csrc = function (c) { return "pages/c" + String(c).padStart(2, "0") + ".webp"; };
+  function paint(el, n) {
+    var r = (n - 1) % CH;
+    el.style.backgroundImage = "url(" + csrc(chunkOf(n)) + ")";
+    el.style.backgroundSize = "100% " + (CH * 100) + "%";
+    el.style.backgroundPosition = "0 " + (r * 100 / (CH - 1)) + "%";
+  }
+
+  // build pages
+  var book = $("book"), frag = document.createDocumentFragment();
+  for (var i = 1; i <= TOTAL; i++) {
+    var d = document.createElement("div");
+    d.className = "page loading";
+    if (i === 1 || i === TOTAL) d.setAttribute("data-density", "hard");
+    var im = document.createElement("div");
+    im.className = "pimg"; im.setAttribute("role", "img"); im.setAttribute("aria-label", "Página " + i);
+    d.appendChild(im); frag.appendChild(d);
+  }
+  book.appendChild(frag);
+  var imgs = book.querySelectorAll(".pimg"), chunks = {};
+  function loadChunk(c) {
+    if (chunks[c]) return; chunks[c] = true;
+    var pre = new Image();
+    pre.onload = function () {
+      for (var n = (c - 1) * CH + 1; n <= c * CH; n++) imgs[n - 1].parentNode.classList.remove("loading");
+    };
+    pre.src = csrc(c);
+  }
+  function loadAround(idx) { // idx 0-based
+    for (var k = idx - 3; k <= idx + 6; k++) {
+      if (k < 0 || k >= TOTAL) continue;
+      var el = imgs[k];
+      if (!el.dataset.set) { el.dataset.set = 1; loadChunk(chunkOf(k + 1)); paint(el, k + 1); }
+    }
+  }
+
+  // size the book to the stage
+  var stage = $("stage"), wrap = $("wrap");
+  function fit() {
+    var cs = getComputedStyle(stage);
+    var W = stage.clientWidth - parseFloat(cs.paddingLeft) - parseFloat(cs.paddingRight) - (innerWidth > 640 ? 120 : 0);
+    var H = stage.clientHeight - parseFloat(cs.paddingTop) - parseFloat(cs.paddingBottom);
+    var portrait = W < 620;
+    var maxW = portrait ? H * PW / PH : 2 * H * PW / PH;
+    wrap.style.maxWidth = Math.max(240, Math.min(W, maxW)) + "px";
+  }
+  fit();
+  addEventListener("resize", fit);
+
+  var pf = new St.PageFlip(book, {
+    width: PW, height: PH, size: "stretch",
+    minWidth: 240, maxWidth: 1200, minHeight: 340, maxHeight: 1700,
+    showCover: true, usePortrait: true, mobileScrollSupport: false,
+    maxShadowOpacity: 0.35, flippingTime: 700, drawShadow: true
+  });
+  pf.loadFromHTML(book.querySelectorAll(".page"));
+
+  function cur() { return pf.getCurrentPageIndex(); }
+  function catFor(n) { var c = null; CATS.forEach(function (x) { if (x[0] <= n) c = x; }); return c; }
+  function sync(idx) {
+    loadAround(idx);
+    var n = idx + 1;
+    $("pageIn").value = n; $("slider").value = n;
+    var c = catFor(n);
+    $("catNow").innerHTML = c ? "<b>" + String(c[0]).padStart(2, "0") + ".</b> " + c[1] : "";
+    $("btnWa").href = "https://wa.me/5537920006433?text=" + encodeURIComponent("Olá! Vi o catálogo de brindes da Imprima e gostaria de um orçamento (página " + n + ").");
+    try { history.replaceState(null, "", "#p" + n); } catch (e) {}
+  }
+  pf.on("flip", function (e) { sync(e.data); });
+  pf.on("changeOrientation", fit);
+
+  function go(n) {
+    n = Math.max(1, Math.min(TOTAL, n | 0));
+    loadAround(n - 1);
+    pf.turnToPage(n - 1); sync(n - 1);
+  }
+  var m = /^#p(\d{1,3})$/.exec(location.hash);
+  if (m) go(+m[1]); else sync(0);
+
+  $("prev").onclick = $("sidePrev").onclick = function () { pf.flipPrev(); };
+  $("next").onclick = $("sideNext").onclick = function () { pf.flipNext(); };
+  $("slider").oninput = function () { $("pageIn").value = this.value; };
+  $("slider").onchange = function () { go(+this.value); };
+  $("pageIn").onchange = function () { go(parseInt(this.value, 10) || 1); };
+  $("pageIn").onkeydown = function (e) { if (e.key === "Enter") go(parseInt(this.value, 10) || 1); };
+  addEventListener("keydown", function (e) {
+    if (e.target.tagName === "INPUT" || !$("zoom").hidden || !$("drawer").hidden) {
+      if (e.key === "Escape") { closeDrawer(); closeZoom(); }
+      return;
+    }
+    if (e.key === "ArrowLeft") pf.flipPrev();
+    if (e.key === "ArrowRight") pf.flipNext();
+  });
+
+  // drawer
+  function norm(s) { return s.normalize("NFD").replace(/[̀-ͯ]/g, "").toLowerCase(); }
+  PROD.forEach(function (p) { p[3] = norm(p[0] + " " + p[1]); });
+  function esc(s) { return s.replace(/[&<>"]/g, function (c) { return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]; }); }
+  function renderCats() {
+    $("list").innerHTML = CATS.map(function (c) {
+      return '<button class="row cat" type="button" data-p="' + c[0] + '"><span class="nm"><span class="num">' + String(c[0]).padStart(2, "0") + '.</span>' + c[1] + '</span><span class="pg">pág. ' + c[0] + '</span></button>';
+    }).join("");
+  }
+  function renderSearch() {
+    var q = norm($("q").value.trim());
+    var res = q ? PROD.filter(function (p) { return q.split(/\s+/).every(function (w) { return p[3].indexOf(w) > -1; }); }) : [];
+    $("hint").hidden = false;
+    $("hint").textContent = !q ? "Digite o nome do produto ou o código." : res.length ? res.length + (res.length === 1 ? " produto encontrado" : " produtos encontrados") : "Nenhum produto encontrado. Tente outra palavra.";
+    $("list").innerHTML = res.slice(0, 120).map(function (p) {
+      return '<button class="row" type="button" data-p="' + p[2] + '"><span class="nm">' + esc(p[1] || "Produto") + '</span><span class="pg">pág. ' + p[2] + '</span><span class="cd">' + esc(p[0]) + '</span></button>';
+    }).join("");
+  }
+  function setTab(search) {
+    $("tabCats").setAttribute("aria-selected", !search); $("tabSearch").setAttribute("aria-selected", search);
+    $("searchBox").hidden = !search; $("hint").hidden = !search;
+    if (search) { renderSearch(); setTimeout(function () { $("q").focus(); }, 30); } else renderCats();
+  }
+  function openDrawer(search) { $("drawer").hidden = false; $("scrim").hidden = false; setTab(search); }
+  function closeDrawer() { $("drawer").hidden = true; $("scrim").hidden = true; }
+  $("btnCats").onclick = function () { openDrawer(false); };
+  $("btnSearch").onclick = function () { openDrawer(true); };
+  $("tabCats").onclick = function () { setTab(false); };
+  $("tabSearch").onclick = function () { setTab(true); };
+  $("closeDrawer").onclick = $("scrim").onclick = closeDrawer;
+  $("q").oninput = renderSearch;
+  $("list").onclick = function (e) {
+    var b = e.target.closest("[data-p]"); if (!b) return;
+    closeDrawer(); go(+b.dataset.p);
+  };
+
+  // zoom
+  var zscale = 1;
+  function visiblePages() {
+    var i = cur(), n = i + 1;
+    if (pf.getOrientation() === "portrait" || n === 1 || n === TOTAL) return [n];
+    var left = n % 2 === 0 ? n : n - 1;
+    return [left, left + 1].filter(function (x) { return x >= 1 && x <= TOTAL; });
+  }
+  function drawZoom() {
+    var ps = visiblePages(), box = $("zIn2");
+    var avail = innerWidth - 40;
+    var base = Math.min(1042, Math.max(320, avail / ps.length));
+    box.innerHTML = "";
+    ps.forEach(function (n) {
+      var im = document.createElement("div"); paint(im, n); im.className = "zimg";
+      im.setAttribute("role", "img"); im.setAttribute("aria-label", "Página " + n);
+      im.style.width = Math.round(base * zscale) + "px"; im.style.height = Math.round(base * zscale * PH / PW) + "px";
+      box.appendChild(im);
+    });
+    $("zoomLbl").textContent = (ps.length > 1 ? "Páginas " + ps.join(" e ") : "Página " + ps[0]) + " · " + Math.round(zscale * 100) + "%";
+  }
+  function closeZoom() { $("zoom").hidden = true; }
+  $("btnZoom").onclick = function () { zscale = 1; $("zoom").hidden = false; drawZoom(); };
+  $("zIn").onclick = function () { zscale = Math.min(2.5, zscale + 0.35); drawZoom(); };
+  $("zOut").onclick = function () { zscale = Math.max(0.6, zscale - 0.35); drawZoom(); };
+  $("zClose").onclick = closeZoom;
+  book.addEventListener("dblclick", function () { $("btnZoom").click(); });
+
+  $("btnFull").onclick = function () {
+    try {
+      if (document.fullscreenElement) document.exitFullscreen();
+      else document.documentElement.requestFullscreen().catch(function () {});
+    } catch (e) {}
+  };
+})();
+</script>
+
+</body>
+</html>
