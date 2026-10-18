@@ -84,3 +84,26 @@ Links para uma página específica funcionam assim: `https://catalogo.graficaimp
 - **Trocar páginas:** cada arquivo em `pages/` tem 5 páginas empilhadas (c01 = págs. 1–5). Para trocar páginas, peça ao Claude para gerar os arquivos de novo.
 - **Mudar o WhatsApp:** no `index.html`, procure `5537920006433` e troque (duas ocorrências), além do texto `(37) 92000-6433`.
 - **Usar outro domínio:** troque o conteúdo do arquivo `CNAME` e os endereços `catalogo.graficaimprimaformiga.com.br` no topo do `index.html`.
+
+## Páginas por categoria, sitemap e SEO (outubro de 2026)
+
+O site hoje é publicado pela **Vercel** a partir deste repositório. Cada envio para o `main` atualiza o site.
+
+| Arquivo | Para que serve |
+|---|---|
+| `<categoria>/index.html` | Página de texto de cada categoria (ex.: `/canetas-personalizadas`), com código, nome e botão de orçamento de cada produto. É o que o Google lê. |
+| `sitemap.xml` | Lista de endereços do site para o Google |
+| `robots.txt` | Libera o site para o Google e indica o sitemap |
+| `logo.png` | Logotipo usado nas páginas de categoria e nos dados da empresa |
+| `tools/gerar-paginas.js` | Gera as páginas de categoria, a lista de categorias do bloco "Sobre" e o `sitemap.xml` |
+| `.vercelignore` | Impede que `tools/` e este LEIA-ME sejam publicados |
+
+**Sempre que mudar produtos ou categorias** (`CATS` e `PROD` no `index.html`), rode na pasta do catálogo:
+
+```bash
+node tools/gerar-paginas.js
+```
+
+Uma categoria nova precisa de endereço e título na lista `SLUGS`, no começo de `tools/gerar-paginas.js`.
+
+Endereço, telefone e Instagram aparecem em dois lugares: no `index.html` (dados da empresa no `<head>` e bloco "Sobre") e em `tools/gerar-paginas.js` (rodapé das páginas de categoria).

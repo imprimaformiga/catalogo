@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://catalogo.graficaimprimaformiga.com.br/sitemap.xml
