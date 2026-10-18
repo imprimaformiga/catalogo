@@ -148,6 +148,7 @@ function pagina(c) {
 <meta property="og:image" content="${SITE}/og-capa.jpg">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="icon" type="image/png" href="/favicon.png">
+<script src="/js/medicao.js" defer></script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap">
 <script type="application/ld+json">${JSON.stringify(ld)}</script>
@@ -179,7 +180,7 @@ ${blocos}
     <p><a href="/#sobre">Endereço, mapa e dúvidas frequentes</a></p>
   </section>
 </main>
-<footer>© Imprima Gráfica e Brindes Personalizados · Formiga-MG</footer>
+<footer>© Imprima Gráfica e Brindes Personalizados · Formiga-MG · <a href="#" onclick="window.preferenciasCookies && preferenciasCookies(); return false;">Preferências de cookies</a></footer>
 </body>
 </html>
 `;
